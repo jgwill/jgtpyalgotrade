@@ -26,9 +26,9 @@ except ImportError:
 setup(
     name='jgtpyalgotrade',
     version='0.21',
-    description='JGT Python Algorithmic Trading',
+    description='JGT Python Algorithmic Trading.  Based on work from : Gabriel Martin Becedillas Ruiz',
     long_description='Python library for backtesting stock trading strategies.',
-    author='Gabriel Martin Becedillas Ruiz',
+    author='Jean-Guillaume Isabelle',
     author_email='jgtpyalgotrade@guillaumeisabelle.com',
     url='http://github.com/jgwill/jgtpyalgotrade/',
     download_url='https://github.com/jgwill/jgtpyalgotrade/archive/refs/tags/dummy.zip',
