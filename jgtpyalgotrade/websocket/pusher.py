@@ -22,12 +22,12 @@ import json
 
 from six.moves.urllib.parse import urlencode
 
-import pyalgotrade
-from pyalgotrade.websocket import client
-import pyalgotrade.logger
+import jgtpyalgotrade
+from jgtpyalgotrade.websocket import client
+import jgtpyalgotrade.logger
 
 
-logger = pyalgotrade.logger.getLogger("pusher")
+logger = jgtpyalgotrade.logger.getLogger("pusher")
 
 
 # Pusher protocol reference: http://pusher.com/docs/pusher_protocol
@@ -75,7 +75,7 @@ class WebSocketClient(client.WebSocketClientBase):
         params = {
             "protocol": protocol,
             "client": "Python-PyAlgoTrade",
-            "version": pyalgotrade.__version__
+            "version": jgtpyalgotrade.__version__
             }
         url = "ws://ws.pusherapp.com/app/%s?%s" % (appKey, urlencode(params))
         super(WebSocketClient, self).__init__(url)

@@ -18,9 +18,9 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade.stratanalyzer import returns
-from pyalgotrade import warninghelpers
-from pyalgotrade import broker
+from jgtpyalgotrade.stratanalyzer import returns
+from jgtpyalgotrade import warninghelpers
+from jgtpyalgotrade import broker
 
 import datetime
 
@@ -141,9 +141,9 @@ class Position(object):
     to track returns and PnL easier that placing orders manually.
 
     :param strategy: The strategy that this position belongs to.
-    :type strategy: :class:`pyalgotrade.strategy.BaseStrategy`.
+    :type strategy: :class:`jgtpyalgotrade.strategy.BaseStrategy`.
     :param entryOrder: The order used to enter the position.
-    :type entryOrder: :class:`pyalgotrade.broker.Order`
+    :type entryOrder: :class:`jgtpyalgotrade.broker.Order`
     :param goodTillCanceled: True if the entry order should be set as good till canceled.
     :type goodTillCanceled: boolean.
     :param allOrNone: True if the orders should be completely filled or not at all.
@@ -233,11 +233,11 @@ class Position(object):
         return self.__exitOrder is not None and self.__exitOrder.isFilled()
 
     def getEntryOrder(self):
-        """Returns the :class:`pyalgotrade.broker.Order` used to enter the position."""
+        """Returns the :class:`jgtpyalgotrade.broker.Order` used to enter the position."""
         return self.__entryOrder
 
     def getExitOrder(self):
-        """Returns the :class:`pyalgotrade.broker.Order` used to exit the position. If this position hasn't been closed yet, None is returned."""
+        """Returns the :class:`jgtpyalgotrade.broker.Order` used to exit the position. If this position hasn't been closed yet, None is returned."""
         return self.__exitOrder
 
     def getInstrument(self):

@@ -18,13 +18,13 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import dataseries
+from jgtpyalgotrade import dataseries
 
 import six
 
 
 class BarDataSeries(dataseries.SequenceDataSeries):
-    """A DataSeries of :class:`pyalgotrade.bar.Bar` instances.
+    """A DataSeries of :class:`jgtpyalgotrade.bar.Bar` instances.
 
     :param maxLen: The maximum number of values to hold.
         Once a bounded length is full, when new items are added, a corresponding number of items are discarded from the
@@ -76,36 +76,36 @@ class BarDataSeries(dataseries.SequenceDataSeries):
             extraDS.appendWithDateTime(dateTime, value)
 
     def getOpenDataSeries(self):
-        """Returns a :class:`pyalgotrade.dataseries.DataSeries` with the open prices."""
+        """Returns a :class:`jgtpyalgotrade.dataseries.DataSeries` with the open prices."""
         return self.__openDS
 
     def getCloseDataSeries(self):
-        """Returns a :class:`pyalgotrade.dataseries.DataSeries` with the close prices."""
+        """Returns a :class:`jgtpyalgotrade.dataseries.DataSeries` with the close prices."""
         return self.__closeDS
 
     def getHighDataSeries(self):
-        """Returns a :class:`pyalgotrade.dataseries.DataSeries` with the high prices."""
+        """Returns a :class:`jgtpyalgotrade.dataseries.DataSeries` with the high prices."""
         return self.__highDS
 
     def getLowDataSeries(self):
-        """Returns a :class:`pyalgotrade.dataseries.DataSeries` with the low prices."""
+        """Returns a :class:`jgtpyalgotrade.dataseries.DataSeries` with the low prices."""
         return self.__lowDS
 
     def getVolumeDataSeries(self):
-        """Returns a :class:`pyalgotrade.dataseries.DataSeries` with the volume."""
+        """Returns a :class:`jgtpyalgotrade.dataseries.DataSeries` with the volume."""
         return self.__volumeDS
 
     def getAdjCloseDataSeries(self):
-        """Returns a :class:`pyalgotrade.dataseries.DataSeries` with the adjusted close prices."""
+        """Returns a :class:`jgtpyalgotrade.dataseries.DataSeries` with the adjusted close prices."""
         return self.__adjCloseDS
 
     def getPriceDataSeries(self):
-        """Returns a :class:`pyalgotrade.dataseries.DataSeries` with the close or adjusted close prices."""
+        """Returns a :class:`jgtpyalgotrade.dataseries.DataSeries` with the close or adjusted close prices."""
         if self.__useAdjustedValues:
             return self.__adjCloseDS
         else:
             return self.__closeDS
 
     def getExtraDataSeries(self, name):
-        """Returns a :class:`pyalgotrade.dataseries.DataSeries` for an extra column."""
+        """Returns a :class:`jgtpyalgotrade.dataseries.DataSeries` for an extra column."""
         return self.__getOrCreateExtraDS(name)

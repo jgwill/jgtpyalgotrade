@@ -18,15 +18,15 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import stratanalyzer
-from pyalgotrade import broker
-from pyalgotrade.stratanalyzer import returns
+from jgtpyalgotrade import stratanalyzer
+from jgtpyalgotrade import broker
+from jgtpyalgotrade.stratanalyzer import returns
 
 import numpy as np
 
 
 class Trades(stratanalyzer.StrategyAnalyzer):
-    """A :class:`pyalgotrade.stratanalyzer.StrategyAnalyzer` that records the profit/loss
+    """A :class:`jgtpyalgotrade.stratanalyzer.StrategyAnalyzer` that records the profit/loss
     and returns of every completed trade.
 
     .. note::

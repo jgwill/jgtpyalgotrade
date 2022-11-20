@@ -20,9 +20,9 @@
 
 import six
 
-from pyalgotrade import barfeed
-from pyalgotrade import bar
-from pyalgotrade import utils
+from jgtpyalgotrade import barfeed
+from jgtpyalgotrade import bar
+from jgtpyalgotrade import utils
 
 
 # A non real-time BarFeed responsible for:

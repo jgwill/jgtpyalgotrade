@@ -15,10 +15,10 @@
 # limitations under the License.
 
 
-from pyalgotrade import barfeed
-from pyalgotrade.dataseries import resampled
-from pyalgotrade import resamplebase
-from pyalgotrade import bar
+from jgtpyalgotrade import barfeed
+from jgtpyalgotrade.dataseries import resampled
+from jgtpyalgotrade import resamplebase
+from jgtpyalgotrade import bar
 
 
 class BarsGrouper(resamplebase.Grouper):

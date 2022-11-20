@@ -18,7 +18,7 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import technical
+from jgtpyalgotrade import technical
 
 
 class ROCEventWindow(technical.EventWindow):
@@ -43,7 +43,7 @@ class RateOfChange(technical.EventBasedFilter):
     """Rate of change filter as described in http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:rate_of_change_roc_and_momentum.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param valuesAgo: The number of values back that a given value will compare to. Must be > 0.
     :type valuesAgo: int.
     :param maxLen: The maximum number of values to hold.

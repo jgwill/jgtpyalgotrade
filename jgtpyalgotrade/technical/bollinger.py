@@ -18,16 +18,16 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import dataseries
-from pyalgotrade.technical import ma
-from pyalgotrade.technical import stats
+from jgtpyalgotrade import dataseries
+from jgtpyalgotrade.technical import ma
+from jgtpyalgotrade.technical import stats
 
 
 class BollingerBands(object):
     """Bollinger Bands filter as described in http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:bollinger_bands.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param period: The number of values to use in the calculation. Must be > 1.
     :type period: int.
     :param numStdDev: The number of standard deviations to use for the upper and lower bands.
@@ -63,18 +63,18 @@ class BollingerBands(object):
 
     def getUpperBand(self):
         """
-        Returns the upper band as a :class:`pyalgotrade.dataseries.DataSeries`.
+        Returns the upper band as a :class:`jgtpyalgotrade.dataseries.DataSeries`.
         """
         return self.__upperBand
 
     def getMiddleBand(self):
         """
-        Returns the middle band as a :class:`pyalgotrade.dataseries.DataSeries`.
+        Returns the middle band as a :class:`jgtpyalgotrade.dataseries.DataSeries`.
         """
         return self.__sma
 
     def getLowerBand(self):
         """
-        Returns the lower band as a :class:`pyalgotrade.dataseries.DataSeries`.
+        Returns the lower band as a :class:`jgtpyalgotrade.dataseries.DataSeries`.
         """
         return self.__lowerBand

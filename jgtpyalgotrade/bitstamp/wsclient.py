@@ -22,9 +22,9 @@ import datetime
 
 from six.moves import queue
 
-from pyalgotrade.websocket import pusher
-from pyalgotrade.websocket import client
-from pyalgotrade.bitstamp import common
+from jgtpyalgotrade.websocket import pusher
+from jgtpyalgotrade.websocket import client
+from jgtpyalgotrade.bitstamp import common
 
 
 def get_current_datetime():

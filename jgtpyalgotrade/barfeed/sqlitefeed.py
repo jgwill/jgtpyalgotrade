@@ -18,10 +18,10 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade.barfeed import dbfeed
-from pyalgotrade.barfeed import membf
-from pyalgotrade import bar
-from pyalgotrade.utils import dt
+from jgtpyalgotrade.barfeed import dbfeed
+from jgtpyalgotrade.barfeed import membf
+from jgtpyalgotrade import bar
+from jgtpyalgotrade.utils import dt
 
 import sqlite3
 import os

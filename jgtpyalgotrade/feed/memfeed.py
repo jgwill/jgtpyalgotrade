@@ -18,8 +18,8 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import feed
-from pyalgotrade import dataseries
+from jgtpyalgotrade import feed
+from jgtpyalgotrade import dataseries
 
 
 class MemFeed(feed.BaseFeed):

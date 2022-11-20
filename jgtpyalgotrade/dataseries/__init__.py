@@ -23,8 +23,8 @@ import abc
 import six
 from six.moves import xrange
 
-from pyalgotrade import observer
-from pyalgotrade.utils import collections
+from jgtpyalgotrade import observer
+from jgtpyalgotrade.utils import collections
 
 DEFAULT_MAX_LEN = 1024
 

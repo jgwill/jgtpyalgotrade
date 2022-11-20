@@ -18,18 +18,18 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade.barfeed import csvfeed
-from pyalgotrade import bar
+from jgtpyalgotrade.barfeed import csvfeed
+from jgtpyalgotrade import bar
 
 
 class Feed(csvfeed.GenericBarFeed):
-    """A :class:`pyalgotrade.barfeed.csvfeed.BarFeed` that loads bars from CSV files downloaded from Quandl.
+    """A :class:`jgtpyalgotrade.barfeed.csvfeed.BarFeed` that loads bars from CSV files downloaded from Quandl.
 
-    :param frequency: The frequency of the bars. Only **pyalgotrade.bar.Frequency.DAY** or **pyalgotrade.bar.Frequency.WEEK**
+    :param frequency: The frequency of the bars. Only **jgtpyalgotrade.bar.Frequency.DAY** or **jgtpyalgotrade.bar.Frequency.WEEK**
         are supported.
-    :param timezone: The default timezone to use to localize bars. Check :mod:`pyalgotrade.marketsession`.
+    :param timezone: The default timezone to use to localize bars. Check :mod:`jgtpyalgotrade.marketsession`.
     :type timezone: A pytz timezone.
-    :param maxLen: The maximum number of values that the :class:`pyalgotrade.dataseries.bards.BarDataSeries` will hold.
+    :param maxLen: The maximum number of values that the :class:`jgtpyalgotrade.dataseries.bards.BarDataSeries` will hold.
         Once a bounded length is full, when new items are added, a corresponding number of items are discarded from the
         opposite end. If None then dataseries.DEFAULT_MAX_LEN is used.
     :type maxLen: int.

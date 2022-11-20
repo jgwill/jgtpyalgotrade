@@ -18,11 +18,11 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-import pyalgotrade.logger
-from pyalgotrade import broker
+import jgtpyalgotrade.logger
+from jgtpyalgotrade import broker
 
 
-logger = pyalgotrade.logger.getLogger("bitstamp")
+logger = jgtpyalgotrade.logger.getLogger("bitstamp")
 btc_symbol = "BTC"
 
 

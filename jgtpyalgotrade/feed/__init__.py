@@ -20,8 +20,8 @@
 
 import abc
 
-from pyalgotrade import observer
-from pyalgotrade import dataseries
+from jgtpyalgotrade import observer
+from jgtpyalgotrade import dataseries
 
 
 def feed_iterator(feed):
@@ -37,7 +37,7 @@ def feed_iterator(feed):
 class BaseFeed(observer.Subject):
     """Base class for feeds.
 
-    :param maxLen: The maximum number of values that each :class:`pyalgotrade.dataseries.DataSeries` will hold.
+    :param maxLen: The maximum number of values that each :class:`jgtpyalgotrade.dataseries.DataSeries` will hold.
         Once a bounded length is full, when new items are added, a corresponding number of items are discarded
         from the opposite end.
     :type maxLen: int.
@@ -112,9 +112,9 @@ class BaseFeed(observer.Subject):
         return list(self.__ds.keys())
 
     def __getitem__(self, key):
-        """Returns the :class:`pyalgotrade.dataseries.DataSeries` for a given key."""
+        """Returns the :class:`jgtpyalgotrade.dataseries.DataSeries` for a given key."""
         return self.__ds[key]
 
     def __contains__(self, key):
-        """Returns True if a :class:`pyalgotrade.dataseries.DataSeries` for the given key is available."""
+        """Returns True if a :class:`jgtpyalgotrade.dataseries.DataSeries` for the given key is available."""
         return key in self.__ds

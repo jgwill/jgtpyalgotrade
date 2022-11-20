@@ -18,7 +18,7 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import technical
+from jgtpyalgotrade import technical
 
 
 class HighLowEventWindow(technical.EventWindow):
@@ -41,7 +41,7 @@ class High(technical.EventBasedFilter):
     """This filter calculates the highest value.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param period: The number of values to use to calculate the highest value.
     :type period: int.
     :param maxLen: The maximum number of values to hold.
@@ -58,7 +58,7 @@ class Low(technical.EventBasedFilter):
     """This filter calculates the lowest value.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param period: The number of values to use to calculate the lowest value.
     :type period: int.
     :param maxLen: The maximum number of values to hold.

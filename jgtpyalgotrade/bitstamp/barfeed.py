@@ -19,7 +19,7 @@
 """
 
 
-from pyalgotrade.bitstamp import livefeed
+from jgtpyalgotrade.bitstamp import livefeed
 
 
 LiveTradeFeed = livefeed.LiveTradeFeed

@@ -18,10 +18,10 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import barfeed
-from pyalgotrade import bar
-from pyalgotrade.barfeed import csvfeed
-from pyalgotrade.utils import dt
+from jgtpyalgotrade import barfeed
+from jgtpyalgotrade import bar
+from jgtpyalgotrade.barfeed import csvfeed
+from jgtpyalgotrade.utils import dt
 
 import datetime
 
@@ -134,14 +134,14 @@ class CSVTradeFeed(csvfeed.BarFeed):
 
     :param timezone: An optional default timezone to use to localize bars. By default bars are loaded in UTC.
     :type timezone: A pytz timezone.
-    :param maxLen: The maximum number of values that the :class:`pyalgotrade.dataseries.bards.BarDataSeries` will hold.
+    :param maxLen: The maximum number of values that the :class:`jgtpyalgotrade.dataseries.bards.BarDataSeries` will hold.
         If not None, it must be greater than 0.
         Once a bounded length is full, when new items are added, a corresponding number of items are discarded from the
         opposite end. If None then dataseries.DEFAULT_MAX_LEN is used.
     :type maxLen: int.
 
     .. note::
-        * A :class:`pyalgotrade.bar.Bar` instance will be created for every trade, so open, high, low and close values will all be the same.
+        * A :class:`jgtpyalgotrade.bar.Bar` instance will be created for every trade, so open, high, low and close values will all be the same.
         * Files must be sorted with the **unixtime** column in ascending order.
     """
 

@@ -23,10 +23,10 @@ import datetime
 import pytz
 import six
 
-from pyalgotrade.utils import dt
-from pyalgotrade.utils import csvutils
-from pyalgotrade.barfeed import membf
-from pyalgotrade import bar
+from jgtpyalgotrade.utils import dt
+from jgtpyalgotrade.utils import csvutils
+from jgtpyalgotrade.barfeed import membf
+from jgtpyalgotrade import bar
 
 
 # Interface for csv row parsers.
@@ -90,7 +90,7 @@ class USEquitiesRTH(DateRangeFilter):
 
 
 class BarFeed(membf.BarFeed):
-    """Base class for CSV file based :class:`pyalgotrade.barfeed.BarFeed`.
+    """Base class for CSV file based :class:`jgtpyalgotrade.barfeed.BarFeed`.
 
     .. note::
         This is a base class and should not be used directly.
@@ -209,10 +209,10 @@ class GenericBarFeed(BarFeed):
         Date Time,Open,High,Low,Close,Volume,Adj Close
         2013-01-01 13:59:00,13.51001,13.56,13.51,13.56,273.88014126,13.51001
 
-    :param frequency: The frequency of the bars. Check :class:`pyalgotrade.bar.Frequency`.
-    :param timezone: The default timezone to use to localize bars. Check :mod:`pyalgotrade.marketsession`.
+    :param frequency: The frequency of the bars. Check :class:`jgtpyalgotrade.bar.Frequency`.
+    :param timezone: The default timezone to use to localize bars. Check :mod:`jgtpyalgotrade.marketsession`.
     :type timezone: A pytz timezone.
-    :param maxLen: The maximum number of values that the :class:`pyalgotrade.dataseries.bards.BarDataSeries` will hold.
+    :param maxLen: The maximum number of values that the :class:`jgtpyalgotrade.dataseries.bards.BarDataSeries` will hold.
         Once a bounded length is full, when new items are added, a corresponding number of items are discarded from the
         opposite end. If None then dataseries.DEFAULT_MAX_LEN is used.
     :type maxLen: int.
@@ -277,7 +277,7 @@ class GenericBarFeed(BarFeed):
         :type instrument: string.
         :param path: The path to the CSV file.
         :type path: string.
-        :param timezone: The timezone to use to localize bars. Check :mod:`pyalgotrade.marketsession`.
+        :param timezone: The timezone to use to localize bars. Check :mod:`jgtpyalgotrade.marketsession`.
         :type timezone: A pytz timezone.
         :param skipMalformedBars: True to skip errors while parsing bars.
         :type skipMalformedBars: boolean.

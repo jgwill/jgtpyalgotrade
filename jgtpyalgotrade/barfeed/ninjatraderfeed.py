@@ -18,10 +18,10 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-import pyalgotrade.barfeed
-from pyalgotrade.barfeed import csvfeed
-from pyalgotrade import bar
-from pyalgotrade.utils import dt
+import jgtpyalgotrade.barfeed
+from jgtpyalgotrade.barfeed import csvfeed
+from jgtpyalgotrade import bar
+from jgtpyalgotrade.utils import dt
 
 import pytz
 
@@ -54,8 +54,8 @@ def parse_datetime(dateTime):
 
 
 class Frequency(object):
-    MINUTE = pyalgotrade.bar.Frequency.MINUTE
-    DAILY = pyalgotrade.bar.Frequency.DAY
+    MINUTE = jgtpyalgotrade.bar.Frequency.MINUTE
+    DAILY = jgtpyalgotrade.bar.Frequency.DAY
 
 
 class RowParser(csvfeed.RowParser):
@@ -66,9 +66,9 @@ class RowParser(csvfeed.RowParser):
 
     def __parseDateTime(self, dateTime):
         ret = None
-        if self.__frequency == pyalgotrade.bar.Frequency.MINUTE:
+        if self.__frequency == jgtpyalgotrade.bar.Frequency.MINUTE:
             ret = parse_datetime(dateTime)
-        elif self.__frequency == pyalgotrade.bar.Frequency.DAY:
+        elif self.__frequency == jgtpyalgotrade.bar.Frequency.DAY:
             ret = datetime.datetime.strptime(dateTime, "%Y%m%d")
             # Time on CSV files is empty. If told to set one, do it.
             if self.__dailyBarTime is not None:
@@ -101,13 +101,13 @@ class RowParser(csvfeed.RowParser):
 
 
 class Feed(csvfeed.BarFeed):
-    """A :class:`pyalgotrade.barfeed.csvfeed.BarFeed` that loads bars from CSV files exported from NinjaTrader.
+    """A :class:`jgtpyalgotrade.barfeed.csvfeed.BarFeed` that loads bars from CSV files exported from NinjaTrader.
 
-    :param frequency: The frequency of the bars. Only **pyalgotrade.bar.Frequency.MINUTE** or **pyalgotrade.bar.Frequency.DAY**
+    :param frequency: The frequency of the bars. Only **jgtpyalgotrade.bar.Frequency.MINUTE** or **jgtpyalgotrade.bar.Frequency.DAY**
         are supported.
-    :param timezone: The default timezone to use to localize bars. Check :mod:`pyalgotrade.marketsession`.
+    :param timezone: The default timezone to use to localize bars. Check :mod:`jgtpyalgotrade.marketsession`.
     :type timezone: A pytz timezone.
-    :param maxLen: The maximum number of values that the :class:`pyalgotrade.dataseries.bards.BarDataSeries` will hold.
+    :param maxLen: The maximum number of values that the :class:`jgtpyalgotrade.dataseries.bards.BarDataSeries` will hold.
         Once a bounded length is full, when new items are added, a corresponding number of items are discarded from the
         opposite end. If None then dataseries.DEFAULT_MAX_LEN is used.
     :type maxLen: int.
@@ -135,7 +135,7 @@ class Feed(csvfeed.BarFeed):
         :type instrument: string.
         :param path: The path to the file.
         :type path: string.
-        :param timezone: The timezone to use to localize bars. Check :mod:`pyalgotrade.marketsession`.
+        :param timezone: The timezone to use to localize bars. Check :mod:`jgtpyalgotrade.marketsession`.
         :type timezone: A pytz timezone.
         """
 

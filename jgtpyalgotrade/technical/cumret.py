@@ -18,7 +18,7 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import technical
+from jgtpyalgotrade import technical
 
 
 class CumRetEventWindow(technical.EventWindow):
@@ -42,7 +42,7 @@ class CumulativeReturn(technical.EventBasedFilter):
     """This filter calculates cumulative returns over another dataseries.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param maxLen: The maximum number of values to hold.
         Once a bounded length is full, when new items are added, a corresponding number of items are discarded from the
         opposite end. If None then dataseries.DEFAULT_MAX_LEN is used.

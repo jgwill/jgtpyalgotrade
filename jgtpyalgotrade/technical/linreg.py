@@ -18,9 +18,9 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import technical
-from pyalgotrade.utils import collections
-from pyalgotrade.utils import dt
+from jgtpyalgotrade import technical
+from jgtpyalgotrade.utils import collections
+from jgtpyalgotrade.utils import dt
 
 import numpy as np
 from scipy import stats
@@ -70,7 +70,7 @@ class LeastSquaresRegression(technical.EventBasedFilter):
     """Calculates values based on a least-squares regression.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param windowSize: The number of values to use to calculate the regression.
     :type windowSize: int.
     :param maxLen: The maximum number of values to hold.
@@ -108,7 +108,7 @@ class Slope(technical.EventBasedFilter):
     """The Slope filter calculates the slope of a least-squares regression line.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param period: The number of values to use to calculate the slope.
     :type period: int.
     :param maxLen: The maximum number of values to hold.

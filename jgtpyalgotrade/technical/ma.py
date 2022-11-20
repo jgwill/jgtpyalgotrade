@@ -19,7 +19,7 @@
 """
 
 import numpy as np
-from pyalgotrade import technical
+from jgtpyalgotrade import technical
 
 
 # This is the formula I'm using to calculate the averages based on previous ones.
@@ -67,7 +67,7 @@ class SMA(technical.EventBasedFilter):
     """Simple Moving Average filter.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param period: The number of values to use to calculate the SMA.
     :type period: int.
     :param maxLen: The maximum number of values to hold.
@@ -104,7 +104,7 @@ class EMA(technical.EventBasedFilter):
     """Exponential Moving Average filter.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param period: The number of values to use to calculate the EMA. Must be an integer greater than 1.
     :type period: int.
     :param maxLen: The maximum number of values to hold.
@@ -136,7 +136,7 @@ class WMA(technical.EventBasedFilter):
     """Weighted Moving Average filter.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param weights: A list of int/float with the weights.
     :type weights: list.
     :param maxLen: The maximum number of values to hold.

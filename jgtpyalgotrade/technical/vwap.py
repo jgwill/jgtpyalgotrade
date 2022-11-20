@@ -18,8 +18,8 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import technical
-from pyalgotrade.dataseries import bards
+from jgtpyalgotrade import technical
+from jgtpyalgotrade.dataseries import bards
 
 
 class VWAPEventWindow(technical.EventWindow):
@@ -48,7 +48,7 @@ class VWAP(technical.EventBasedFilter):
     """Volume Weighted Average Price filter.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.bards.BarDataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.bards.BarDataSeries`.
     :param period: The number of values to use to calculate the VWAP.
     :type period: int.
     :param useTypicalPrice: True if the typical price should be used instead of the closing price.

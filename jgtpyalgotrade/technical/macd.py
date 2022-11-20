@@ -18,15 +18,15 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade.technical import ma
-from pyalgotrade import dataseries
+from jgtpyalgotrade.technical import ma
+from jgtpyalgotrade import dataseries
 
 
 class MACD(dataseries.SequenceDataSeries):
     """Moving Average Convergence-Divergence indicator as described in http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:moving_average_convergence_divergence_macd.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param fastEMA: The number of values to use to calculate the fast EMA.
     :type fastEMA: int.
     :param slowEMA: The number of values to use to calculate the slow EMA.
@@ -59,11 +59,11 @@ class MACD(dataseries.SequenceDataSeries):
         dataSeries.getNewValueEvent().subscribe(self.__onNewValue)
 
     def getSignal(self):
-        """Returns a :class:`pyalgotrade.dataseries.DataSeries` with the EMA over the MACD."""
+        """Returns a :class:`jgtpyalgotrade.dataseries.DataSeries` with the EMA over the MACD."""
         return self.__signal
 
     def getHistogram(self):
-        """Returns a :class:`pyalgotrade.dataseries.DataSeries` with the histogram (the difference between the MACD and the Signal)."""
+        """Returns a :class:`jgtpyalgotrade.dataseries.DataSeries` with the histogram (the difference between the MACD and the Signal)."""
         return self.__histogram
 
     def __onNewValue(self, dataSeries, dateTime, value):

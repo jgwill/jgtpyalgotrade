@@ -18,8 +18,8 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import technical
-from pyalgotrade.dataseries import bards
+from jgtpyalgotrade import technical
+from jgtpyalgotrade.dataseries import bards
 
 
 # This event window will calculate and hold true-range values.
@@ -62,7 +62,7 @@ class ATR(technical.EventBasedFilter):
     """Average True Range filter as described in http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:average_true_range_atr
 
     :param barDataSeries: The BarDataSeries instance being filtered.
-    :type barDataSeries: :class:`pyalgotrade.dataseries.bards.BarDataSeries`.
+    :type barDataSeries: :class:`jgtpyalgotrade.dataseries.bards.BarDataSeries`.
     :param period: The average period. Must be > 1.
     :type period: int.
     :param useAdjustedValues: True to use adjusted Low/High/Close values.

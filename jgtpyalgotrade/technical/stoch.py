@@ -18,9 +18,9 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import technical
-from pyalgotrade.dataseries import bards
-from pyalgotrade.technical import ma
+from jgtpyalgotrade import technical
+from jgtpyalgotrade.dataseries import bards
+from jgtpyalgotrade.technical import ma
 
 
 def get_low_high_values(useAdjusted, bars):
@@ -59,7 +59,7 @@ class StochasticOscillator(technical.EventBasedFilter):
     Note that the value returned by this filter is %K. To access %D use :meth:`getD`.
 
     :param barDataSeries: The BarDataSeries instance being filtered.
-    :type barDataSeries: :class:`pyalgotrade.dataseries.bards.BarDataSeries`.
+    :type barDataSeries: :class:`jgtpyalgotrade.dataseries.bards.BarDataSeries`.
     :param period: The period. Must be > 1.
     :type period: int.
     :param dSMAPeriod: The %D SMA period. Must be > 1.
@@ -81,5 +81,5 @@ class StochasticOscillator(technical.EventBasedFilter):
         self.__d = ma.SMA(self, dSMAPeriod, maxLen)
 
     def getD(self):
-        """Returns a :class:`pyalgotrade.dataseries.DataSeries` with the %D values."""
+        """Returns a :class:`jgtpyalgotrade.dataseries.DataSeries` with the %D values."""
         return self.__d

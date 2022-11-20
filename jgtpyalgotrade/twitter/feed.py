@@ -28,11 +28,11 @@ import tweepy
 # https://github.com/tweepy/tweepy/issues/1064
 from tweepy import streaming
 
-from pyalgotrade import observer
-import pyalgotrade.logger
+from jgtpyalgotrade import observer
+import jgtpyalgotrade.logger
 
 
-logger = pyalgotrade.logger.getLogger("twitter")
+logger = jgtpyalgotrade.logger.getLogger("twitter")
 
 
 # This listener just pushs data into a queue.

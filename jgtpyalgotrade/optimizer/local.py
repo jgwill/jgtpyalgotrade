@@ -26,10 +26,10 @@ import socket
 import threading
 import time
 
-from pyalgotrade.optimizer import base
-from pyalgotrade.optimizer import server
-from pyalgotrade.optimizer import worker
-from pyalgotrade.optimizer import xmlrpcserver
+from jgtpyalgotrade.optimizer import base
+from jgtpyalgotrade.optimizer import server
+from jgtpyalgotrade.optimizer import worker
+from jgtpyalgotrade.optimizer import xmlrpcserver
 
 logger = logging.getLogger(__name__)
 
@@ -143,7 +143,7 @@ def run(strategyClass, barFeed, strategyParameters, workerCount=None, logLevel=l
 
     :param strategyClass: The strategy class.
     :param barFeed: The bar feed to use to backtest the strategy.
-    :type barFeed: :class:`pyalgotrade.barfeed.BarFeed`.
+    :type barFeed: :class:`jgtpyalgotrade.barfeed.BarFeed`.
     :param strategyParameters: The set of parameters to use for backtesting. An iterable object where **each element is
         a tuple that holds parameter values**.
     :param workerCount: The number of strategies to run in parallel. If None then as many workers as CPUs are used.

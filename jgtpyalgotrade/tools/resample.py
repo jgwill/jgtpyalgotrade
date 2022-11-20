@@ -20,8 +20,8 @@
 
 import os
 
-from pyalgotrade import dispatcher
-from pyalgotrade.dataseries import resampled
+from jgtpyalgotrade import dispatcher
+from jgtpyalgotrade.dataseries import resampled
 
 
 datetime_format = "%Y-%m-%d %H:%M:%S"
@@ -81,7 +81,7 @@ def resample_impl(barFeed, frequency, csvFile):
 
 def resample_to_csv(barFeed, frequency, csvFile):
     """Resample a BarFeed into a CSV file grouping bars by a certain frequency.
-    The resulting file can be loaded using :class:`pyalgotrade.barfeed.csvfeed.GenericBarFeed`.
+    The resulting file can be loaded using :class:`jgtpyalgotrade.barfeed.csvfeed.GenericBarFeed`.
     The CSV file will have the following format:
     ::
 
@@ -90,7 +90,7 @@ def resample_to_csv(barFeed, frequency, csvFile):
 
 
     :param barFeed: The bar feed that will provide the bars. It should only hold bars from a single instrument.
-    :type barFeed: :class:`pyalgotrade.barfeed.BarFeed`
+    :type barFeed: :class:`jgtpyalgotrade.barfeed.BarFeed`
     :param frequency: The grouping frequency in seconds. Must be > 0.
     :param csvFile: The path to the CSV file to write.
     :type csvFile: string.

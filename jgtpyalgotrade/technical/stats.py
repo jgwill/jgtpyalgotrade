@@ -18,7 +18,7 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import technical
+from jgtpyalgotrade import technical
 
 
 class StdDevEventWindow(technical.EventWindow):
@@ -38,7 +38,7 @@ class StdDev(technical.EventBasedFilter):
     """Standard deviation filter.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param period: The number of values to use to calculate the Standard deviation.
     :type period: int.
     :param ddof: Delta degrees of freedom.
@@ -74,7 +74,7 @@ class ZScore(technical.EventBasedFilter):
     """Z-Score filter.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param period: The number of values to use to calculate the Z-Score.
     :type period: int.
     :param ddof: Delta degrees of freedom to use for the standard deviation.

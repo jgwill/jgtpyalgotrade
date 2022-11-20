@@ -20,7 +20,7 @@
 
 import numpy as np
 
-from pyalgotrade import technical
+from jgtpyalgotrade import technical
 
 
 # Code Tom Starke for the Hurst Exponent.
@@ -66,7 +66,7 @@ class HurstExponent(technical.EventBasedFilter):
     """Hurst exponent filter.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param period: The number of values to use to calculate the hurst exponent.
     :type period: int.
     :param minLags: The minimum number of lags to use. Must be >= 2.

@@ -24,9 +24,9 @@ import retrying
 
 from six.moves import xmlrpc_client
 
-import pyalgotrade.logger
-from pyalgotrade import barfeed
-from pyalgotrade.optimizer import serialization
+import jgtpyalgotrade.logger
+from jgtpyalgotrade import barfeed
+from jgtpyalgotrade.optimizer import serialization
 
 wait_exponential_multiplier = 500
 wait_exponential_max = 10000
@@ -45,7 +45,7 @@ def retry_on_network_error(function, *args, **kwargs):
 class Worker(object):
     def __init__(self, address, port, workerName=None):
         url = "http://%s:%s/PyAlgoTradeRPC" % (address, port)
-        self.__logger = pyalgotrade.logger.getLogger(workerName)
+        self.__logger = jgtpyalgotrade.logger.getLogger(workerName)
         self.__server = xmlrpc_client.ServerProxy(url, allow_none=True)
         if workerName is None:
             self.__workerName = socket.gethostname()

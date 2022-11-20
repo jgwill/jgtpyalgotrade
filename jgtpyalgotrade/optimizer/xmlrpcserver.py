@@ -23,12 +23,12 @@ import time
 
 from six.moves import xmlrpc_server
 
-import pyalgotrade.logger
-from pyalgotrade.optimizer import base
-from pyalgotrade.optimizer import serialization
+import jgtpyalgotrade.logger
+from jgtpyalgotrade.optimizer import base
+from jgtpyalgotrade.optimizer import serialization
 
 
-logger = pyalgotrade.logger.getLogger(__name__)
+logger = jgtpyalgotrade.logger.getLogger(__name__)
 
 
 class AutoStopThread(threading.Thread):

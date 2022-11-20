@@ -22,10 +22,10 @@ import abc
 
 import six
 
-from pyalgotrade import broker
-from pyalgotrade.broker import fillstrategy
-from pyalgotrade import logger
-import pyalgotrade.bar
+from jgtpyalgotrade import broker
+from jgtpyalgotrade.broker import fillstrategy
+from jgtpyalgotrade import logger
+import jgtpyalgotrade.bar
 
 
 ######################################################################
@@ -44,7 +44,7 @@ class Commission(object):
         """Calculates the commission for an order execution.
 
         :param order: The order being executed.
-        :type order: :class:`pyalgotrade.broker.Order`.
+        :type order: :class:`jgtpyalgotrade.broker.Order`.
         :param price: The price for each share.
         :type price: float.
         :param quantity: The order size.
@@ -174,7 +174,7 @@ class Broker(broker.Broker):
     :param cash: The initial amount of cash.
     :type cash: int/float.
     :param barFeed: The bar feed that will provide the bars.
-    :type barFeed: :class:`pyalgotrade.barfeed.BarFeed`
+    :type barFeed: :class:`jgtpyalgotrade.barfeed.BarFeed`
     :param commission: An object responsible for calculating order commissions.
     :type commission: :class:`Commission`
     """
@@ -261,11 +261,11 @@ class Broker(broker.Broker):
         self.__commission = commission
 
     def setFillStrategy(self, strategy):
-        """Sets the :class:`pyalgotrade.broker.fillstrategy.FillStrategy` to use."""
+        """Sets the :class:`jgtpyalgotrade.broker.fillstrategy.FillStrategy` to use."""
         self.__fillStrategy = strategy
 
     def getFillStrategy(self):
-        """Returns the :class:`pyalgotrade.broker.fillstrategy.FillStrategy` currently set."""
+        """Returns the :class:`jgtpyalgotrade.broker.fillstrategy.FillStrategy` currently set."""
         return self.__fillStrategy
 
     def getUseAdjustedValues(self):
@@ -425,7 +425,7 @@ class Broker(broker.Broker):
         # before waiting for the next bar.
         if not order.getGoodTillCanceled():
             expired = False
-            if self.__barFeed.getFrequency() >= pyalgotrade.bar.Frequency.DAY:
+            if self.__barFeed.getFrequency() >= jgtpyalgotrade.bar.Frequency.DAY:
                 expired = bar_.getDateTime().date() >= order.getAcceptedDateTime().date()
 
             # Cancel the order if it will expire in the next bar.

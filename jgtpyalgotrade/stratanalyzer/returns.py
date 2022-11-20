@@ -20,9 +20,9 @@
 
 import math
 
-from pyalgotrade import stratanalyzer
-from pyalgotrade import observer
-from pyalgotrade import dataseries
+from jgtpyalgotrade import stratanalyzer
+from jgtpyalgotrade import observer
+from jgtpyalgotrade import dataseries
 
 
 # Helper class to calculate time-weighted returns in a portfolio.
@@ -203,7 +203,7 @@ class ReturnsAnalyzerBase(stratanalyzer.StrategyAnalyzer):
 
 class Returns(stratanalyzer.StrategyAnalyzer):
     """
-    A :class:`pyalgotrade.stratanalyzer.StrategyAnalyzer` that calculates time-weighted returns for the
+    A :class:`jgtpyalgotrade.stratanalyzer.StrategyAnalyzer` that calculates time-weighted returns for the
     whole portfolio.
 
     :param maxLen: The maximum number of values to hold in net and cumulative returs dataseries.
@@ -227,9 +227,9 @@ class Returns(stratanalyzer.StrategyAnalyzer):
         self.__cumReturns.appendWithDateTime(dateTime, returnsAnalyzerBase.getCumulativeReturn())
 
     def getReturns(self):
-        """Returns a :class:`pyalgotrade.dataseries.DataSeries` with the returns for each bar."""
+        """Returns a :class:`jgtpyalgotrade.dataseries.DataSeries` with the returns for each bar."""
         return self.__netReturns
 
     def getCumulativeReturns(self):
-        """Returns a :class:`pyalgotrade.dataseries.DataSeries` with the cumulative returns for each bar."""
+        """Returns a :class:`jgtpyalgotrade.dataseries.DataSeries` with the cumulative returns for each bar."""
         return self.__cumReturns

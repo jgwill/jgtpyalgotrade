@@ -83,9 +83,9 @@ def cross_above(values1, values2, start=-2, end=None):
     It returns the number of times values1 crossed above values2 during the given period.
 
     :param values1: The DataSeries that crosses.
-    :type values1: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type values1: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param values2: The DataSeries being crossed.
-    :type values2: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type values2: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param start: The start of the range.
     :type start: int.
     :param end: The end of the range.
@@ -103,9 +103,9 @@ def cross_below(values1, values2, start=-2, end=None):
     It returns the number of times values1 crossed below values2 during the given period.
 
     :param values1: The DataSeries that crosses.
-    :type values1: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type values1: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param values2: The DataSeries being crossed.
-    :type values2: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type values2: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param start: The start of the range.
     :type start: int.
     :param end: The end of the range.

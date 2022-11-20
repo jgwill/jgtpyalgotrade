@@ -23,9 +23,9 @@ import time
 
 from six.moves import queue
 
-from pyalgotrade import broker
-from pyalgotrade.bitstamp import httpclient
-from pyalgotrade.bitstamp import common
+from jgtpyalgotrade import broker
+from jgtpyalgotrade.bitstamp import httpclient
+from jgtpyalgotrade.bitstamp import common
 
 
 def build_order_from_open_order(openOrder, instrumentTraits):

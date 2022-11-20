@@ -23,9 +23,9 @@ import datetime
 
 import six
 
-from pyalgotrade.utils import dt
-from pyalgotrade.utils import csvutils
-from pyalgotrade.feed import memfeed
+from jgtpyalgotrade.utils import dt
+from jgtpyalgotrade.utils import csvutils
+from jgtpyalgotrade.feed import memfeed
 
 
 # Interface for csv row parsers.
@@ -145,9 +145,9 @@ class Feed(BaseFeed):
     :type converter: function.
     :param delimiter: The string used to separate values.
     :type delimiter: string.
-    :param timezone: The timezone to use to localize datetimes. Check :mod:`pyalgotrade.marketsession`.
+    :param timezone: The timezone to use to localize datetimes. Check :mod:`jgtpyalgotrade.marketsession`.
     :type timezone: A pytz timezone.
-    :param maxLen: The maximum number of values that each :class:`pyalgotrade.dataseries.DataSeries` will hold.
+    :param maxLen: The maximum number of values that each :class:`jgtpyalgotrade.dataseries.DataSeries` will hold.
         Once a bounded length is full, when new items are added, a corresponding number of items are discarded from the
         opposite end. If None then dataseries.DEFAULT_MAX_LEN is used.
     :type maxLen: int.

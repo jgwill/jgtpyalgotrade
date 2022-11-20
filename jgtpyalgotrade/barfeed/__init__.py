@@ -20,10 +20,10 @@
 
 import abc
 
-from pyalgotrade import bar
-from pyalgotrade.dataseries import bards
-from pyalgotrade import feed
-from pyalgotrade import dispatchprio
+from jgtpyalgotrade import bar
+from jgtpyalgotrade.dataseries import bards
+from jgtpyalgotrade import feed
+from jgtpyalgotrade import dispatchprio
 
 
 # This is only for backward compatibility since Frequency used to be defined here and not in bar.py.
@@ -31,10 +31,10 @@ Frequency = bar.Frequency
 
 
 class BaseBarFeed(feed.BaseFeed):
-    """Base class for :class:`pyalgotrade.bar.Bar` providing feeds.
+    """Base class for :class:`jgtpyalgotrade.bar.Bar` providing feeds.
 
-    :param frequency: The bars frequency. Valid values defined in :class:`pyalgotrade.bar.Frequency`.
-    :param maxLen: The maximum number of values that the :class:`pyalgotrade.dataseries.bards.BarDataSeries` will hold.
+    :param frequency: The bars frequency. Valid values defined in :class:`jgtpyalgotrade.bar.Frequency`.
+    :param maxLen: The maximum number of values that the :class:`jgtpyalgotrade.dataseries.bards.BarDataSeries` will hold.
         Once a bounded length is full, when new items are added, a corresponding number of items are discarded
         from the opposite end. If None then dataseries.DEFAULT_MAX_LEN is used.
     :type maxLen: int.
@@ -75,10 +75,10 @@ class BaseBarFeed(feed.BaseFeed):
     def barsHaveAdjClose(self):
         raise NotImplementedError()
 
-    # Subclasses should implement this and return a pyalgotrade.bar.Bars or None if there are no bars.
+    # Subclasses should implement this and return a jgtpyalgotrade.bar.Bars or None if there are no bars.
     @abc.abstractmethod
     def getNextBars(self):
-        """Override to return the next :class:`pyalgotrade.bar.Bars` in the feed or None if there are no bars.
+        """Override to return the next :class:`jgtpyalgotrade.bar.Bars` in the feed or None if there are no bars.
 
         .. note::
             This is for BaseBarFeed subclasses and it should not be called directly.
@@ -118,11 +118,11 @@ class BaseBarFeed(feed.BaseFeed):
         return self.__frequency < bar.Frequency.DAY
 
     def getCurrentBars(self):
-        """Returns the current :class:`pyalgotrade.bar.Bars`."""
+        """Returns the current :class:`jgtpyalgotrade.bar.Bars`."""
         return self.__currentBars
 
     def getLastBar(self, instrument):
-        """Returns the last :class:`pyalgotrade.bar.Bar` for a given instrument, or None."""
+        """Returns the last :class:`jgtpyalgotrade.bar.Bar` for a given instrument, or None."""
         return self.__lastBars.get(instrument, None)
 
     def getDefaultInstrument(self):
@@ -138,11 +138,11 @@ class BaseBarFeed(feed.BaseFeed):
         self.registerDataSeries(instrument)
 
     def getDataSeries(self, instrument=None):
-        """Returns the :class:`pyalgotrade.dataseries.bards.BarDataSeries` for a given instrument.
+        """Returns the :class:`jgtpyalgotrade.dataseries.bards.BarDataSeries` for a given instrument.
 
         :param instrument: Instrument identifier. If None, the default instrument is returned.
         :type instrument: string.
-        :rtype: :class:`pyalgotrade.dataseries.bards.BarDataSeries`.
+        :rtype: :class:`jgtpyalgotrade.dataseries.bards.BarDataSeries`.
         """
         if instrument is None:
             instrument = self.__defaultInstrument

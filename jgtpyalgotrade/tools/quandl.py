@@ -24,11 +24,11 @@ import argparse
 
 import six
 
-from pyalgotrade import bar
-from pyalgotrade.barfeed import quandlfeed
-from pyalgotrade.utils import dt
-from pyalgotrade.utils import csvutils
-import pyalgotrade.logger
+from jgtpyalgotrade import bar
+from jgtpyalgotrade.barfeed import quandlfeed
+from jgtpyalgotrade.utils import dt
+from jgtpyalgotrade.utils import csvutils
+import jgtpyalgotrade.logger
 
 
 # http://www.quandl.com/help/api
@@ -94,7 +94,7 @@ def build_feed(sourceCode, tableCodes, fromYear, toYear, storage, frequency=bar.
                skipErrors=False, authToken=None, columnNames={}, forceDownload=False,
                skipMalformedBars=False
                ):
-    """Build and load a :class:`pyalgotrade.barfeed.quandlfeed.Feed` using CSV files downloaded from Quandl.
+    """Build and load a :class:`jgtpyalgotrade.barfeed.quandlfeed.Feed` using CSV files downloaded from Quandl.
     CSV files are downloaded if they haven't been downloaded before.
 
     :param sourceCode: The dataset source code.
@@ -107,9 +107,9 @@ def build_feed(sourceCode, tableCodes, fromYear, toYear, storage, frequency=bar.
     :type toYear: int.
     :param storage: The path were the files will be loaded from, or downloaded to.
     :type storage: string.
-    :param frequency: The frequency of the bars. Only **pyalgotrade.bar.Frequency.DAY** or **pyalgotrade.bar.Frequency.WEEK**
+    :param frequency: The frequency of the bars. Only **jgtpyalgotrade.bar.Frequency.DAY** or **jgtpyalgotrade.bar.Frequency.WEEK**
         are supported.
-    :param timezone: The default timezone to use to localize bars. Check :mod:`pyalgotrade.marketsession`.
+    :param timezone: The default timezone to use to localize bars. Check :mod:`jgtpyalgotrade.marketsession`.
     :type timezone: A pytz timezone.
     :param skipErrors: True to keep on loading/downloading files in case of errors.
     :type skipErrors: boolean.
@@ -129,10 +129,10 @@ def build_feed(sourceCode, tableCodes, fromYear, toYear, storage, frequency=bar.
     :param skipMalformedBars: True to skip errors while parsing bars.
     :type skipMalformedBars: boolean.
 
-    :rtype: :class:`pyalgotrade.barfeed.quandlfeed.Feed`.
+    :rtype: :class:`jgtpyalgotrade.barfeed.quandlfeed.Feed`.
     """
 
-    logger = pyalgotrade.logger.getLogger("quandl")
+    logger = jgtpyalgotrade.logger.getLogger("quandl")
     ret = quandlfeed.Feed(frequency, timezone)
 
     # Additional column names.
@@ -179,7 +179,7 @@ def main():
 
     args = parser.parse_args()
 
-    logger = pyalgotrade.logger.getLogger("quandl")
+    logger = jgtpyalgotrade.logger.getLogger("quandl")
 
     if not os.path.exists(args.storage):
         logger.info("Creating %s directory" % (args.storage))

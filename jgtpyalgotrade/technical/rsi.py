@@ -20,7 +20,7 @@
 
 from six.moves import xrange
 
-from pyalgotrade import technical
+from jgtpyalgotrade import technical
 
 # RSI = 100 - 100 / (1 + RS)
 # RS = Average gain / Average loss
@@ -113,7 +113,7 @@ class RSI(technical.EventBasedFilter):
     """Relative Strength Index filter as described in http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:relative_strength_index_rsi.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param period: The period. Note that if period is **n**, then **n+1** values are used. Must be > 1.
     :type period: int.
     :param maxLen: The maximum number of values to hold.

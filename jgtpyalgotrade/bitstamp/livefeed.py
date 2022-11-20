@@ -23,11 +23,11 @@ import time
 
 from six.moves import queue
 
-from pyalgotrade import bar
-from pyalgotrade import barfeed
-from pyalgotrade import observer
-from pyalgotrade.bitstamp import common
-from pyalgotrade.bitstamp import wsclient
+from jgtpyalgotrade import bar
+from jgtpyalgotrade import barfeed
+from jgtpyalgotrade import observer
+from jgtpyalgotrade.bitstamp import common
+from jgtpyalgotrade.bitstamp import wsclient
 
 
 class TradeBar(bar.Bar):
@@ -98,7 +98,7 @@ class LiveTradeFeed(barfeed.BaseBarFeed):
 
     """A real-time BarFeed that builds bars from live trades.
 
-    :param maxLen: The maximum number of values that the :class:`pyalgotrade.dataseries.bards.BarDataSeries` will hold.
+    :param maxLen: The maximum number of values that the :class:`jgtpyalgotrade.dataseries.bards.BarDataSeries` will hold.
         Once a bounded length is full, when new items are added, a corresponding number of items are discarded
         from the opposite end. If None then dataseries.DEFAULT_MAX_LEN is used.
     :type maxLen: int.
@@ -260,8 +260,8 @@ class LiveTradeFeed(barfeed.BaseBarFeed):
         Returns the event that will be emitted when the orderbook gets updated.
 
         Eventh handlers should receive one parameter:
-         1. A :class:`pyalgotrade.bitstamp.wsclient.OrderBookUpdate` instance.
+         1. A :class:`jgtpyalgotrade.bitstamp.wsclient.OrderBookUpdate` instance.
 
-        :rtype: :class:`pyalgotrade.observer.Event`.
+        :rtype: :class:`jgtpyalgotrade.observer.Event`.
         """
         return self.__orderBookUpdateEvent

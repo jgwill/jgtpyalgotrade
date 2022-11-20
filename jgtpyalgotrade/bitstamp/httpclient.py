@@ -25,8 +25,8 @@ import hashlib
 import requests
 import threading
 
-from pyalgotrade.utils import dt
-from pyalgotrade.bitstamp import common
+from jgtpyalgotrade.utils import dt
+from jgtpyalgotrade.bitstamp import common
 
 import logging
 logging.getLogger("requests").setLevel(logging.ERROR)

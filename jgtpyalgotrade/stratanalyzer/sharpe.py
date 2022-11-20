@@ -18,9 +18,9 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import stratanalyzer
-from pyalgotrade.stratanalyzer import returns
-from pyalgotrade.utils import stats
+from jgtpyalgotrade import stratanalyzer
+from jgtpyalgotrade.stratanalyzer import returns
+from jgtpyalgotrade.utils import stats
 
 import math
 
@@ -81,7 +81,7 @@ def sharpe_ratio_2(returns, riskFreeRate, firstDateTime, lastDateTime, annualize
 
 
 class SharpeRatio(stratanalyzer.StrategyAnalyzer):
-    """A :class:`pyalgotrade.stratanalyzer.StrategyAnalyzer` that calculates
+    """A :class:`jgtpyalgotrade.stratanalyzer.StrategyAnalyzer` that calculates
     Sharpe ratio for the whole portfolio.
 
     :param useDailyReturns: True if daily returns should be used instead of the returns for each bar.

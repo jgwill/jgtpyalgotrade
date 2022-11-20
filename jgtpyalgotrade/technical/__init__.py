@@ -18,8 +18,8 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade.utils import collections
-from pyalgotrade import dataseries
+from jgtpyalgotrade.utils import collections
+from jgtpyalgotrade import dataseries
 
 
 class EventWindow(object):
@@ -64,11 +64,11 @@ class EventWindow(object):
 
 
 class EventBasedFilter(dataseries.SequenceDataSeries):
-    """An EventBasedFilter class is responsible for capturing new values in a :class:`pyalgotrade.dataseries.DataSeries`
+    """An EventBasedFilter class is responsible for capturing new values in a :class:`jgtpyalgotrade.dataseries.DataSeries`
     and using an :class:`EventWindow` to calculate new values.
 
     :param dataSeries: The DataSeries instance being filtered.
-    :type dataSeries: :class:`pyalgotrade.dataseries.DataSeries`.
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.DataSeries`.
     :param eventWindow: The EventWindow instance to use to calculate new values.
     :type eventWindow: :class:`EventWindow`.
     :param maxLen: The maximum number of values to hold.

@@ -18,10 +18,10 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade.barfeed import csvfeed
-from pyalgotrade.barfeed import common
-from pyalgotrade.utils import dt
-from pyalgotrade import bar
+from jgtpyalgotrade.barfeed import csvfeed
+from jgtpyalgotrade.barfeed import common
+from jgtpyalgotrade.utils import dt
+from jgtpyalgotrade import bar
 
 import datetime
 
@@ -87,13 +87,13 @@ class RowParser(csvfeed.RowParser):
 
 
 class Feed(csvfeed.BarFeed):
-    """A :class:`pyalgotrade.barfeed.csvfeed.BarFeed` that loads bars from CSV files downloaded from Yahoo! Finance.
+    """A :class:`jgtpyalgotrade.barfeed.csvfeed.BarFeed` that loads bars from CSV files downloaded from Yahoo! Finance.
 
-    :param frequency: The frequency of the bars. Only **pyalgotrade.bar.Frequency.DAY** or **pyalgotrade.bar.Frequency.WEEK**
+    :param frequency: The frequency of the bars. Only **jgtpyalgotrade.bar.Frequency.DAY** or **jgtpyalgotrade.bar.Frequency.WEEK**
         are supported.
-    :param timezone: The default timezone to use to localize bars. Check :mod:`pyalgotrade.marketsession`.
+    :param timezone: The default timezone to use to localize bars. Check :mod:`jgtpyalgotrade.marketsession`.
     :type timezone: A pytz timezone.
-    :param maxLen: The maximum number of values that the :class:`pyalgotrade.dataseries.bards.BarDataSeries` will hold.
+    :param maxLen: The maximum number of values that the :class:`jgtpyalgotrade.dataseries.bards.BarDataSeries` will hold.
         Once a bounded length is full, when new items are added, a corresponding number of items are discarded from the
         opposite end. If None then dataseries.DEFAULT_MAX_LEN is used.
     :type maxLen: int.
@@ -136,7 +136,7 @@ class Feed(csvfeed.BarFeed):
         :type instrument: string.
         :param path: The path to the CSV file.
         :type path: string.
-        :param timezone: The timezone to use to localize bars. Check :mod:`pyalgotrade.marketsession`.
+        :param timezone: The timezone to use to localize bars. Check :mod:`jgtpyalgotrade.marketsession`.
         :type timezone: A pytz timezone.
         """
 

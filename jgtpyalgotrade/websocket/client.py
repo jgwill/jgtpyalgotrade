@@ -29,10 +29,10 @@ if six.PY3:
     import asyncio
     import tornado.platform.asyncio
 
-import pyalgotrade.logger
+import jgtpyalgotrade.logger
 
 
-logger = pyalgotrade.logger.getLogger("websocket.client")
+logger = jgtpyalgotrade.logger.getLogger("websocket.client")
 
 
 # This class is responsible for sending keep alive messages and detecting disconnections

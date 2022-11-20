@@ -22,8 +22,8 @@ import abc
 
 import six
 
-from pyalgotrade import broker
-import pyalgotrade.bar
+from jgtpyalgotrade import broker
+import jgtpyalgotrade.bar
 from . import slippage
 
 
@@ -115,7 +115,7 @@ class FillStrategy(object):
         :param broker_: The broker.
         :type broker_: :class:`Broker`
         :param bars: The current bars.
-        :type bars: :class:`pyalgotrade.bar.Bars`
+        :type bars: :class:`jgtpyalgotrade.bar.Bars`
         """
         pass
 
@@ -126,7 +126,7 @@ class FillStrategy(object):
         :param broker_: The broker.
         :type broker_: :class:`Broker`
         :param order: The order filled.
-        :type order: :class:`pyalgotrade.broker.Order`
+        :type order: :class:`jgtpyalgotrade.broker.Order`
         """
         pass
 
@@ -138,9 +138,9 @@ class FillStrategy(object):
         :param broker_: The broker.
         :type broker_: :class:`Broker`
         :param order: The order.
-        :type order: :class:`pyalgotrade.broker.MarketOrder`
+        :type order: :class:`jgtpyalgotrade.broker.MarketOrder`
         :param bar: The current bar.
-        :type bar: :class:`pyalgotrade.bar.Bar`
+        :type bar: :class:`jgtpyalgotrade.bar.Bar`
         :rtype: A :class:`FillInfo` or None if the order should not be filled.
         """
         raise NotImplementedError()
@@ -153,9 +153,9 @@ class FillStrategy(object):
         :param broker_: The broker.
         :type broker_: :class:`Broker`
         :param order: The order.
-        :type order: :class:`pyalgotrade.broker.LimitOrder`
+        :type order: :class:`jgtpyalgotrade.broker.LimitOrder`
         :param bar: The current bar.
-        :type bar: :class:`pyalgotrade.bar.Bar`
+        :type bar: :class:`jgtpyalgotrade.bar.Bar`
         :rtype: A :class:`FillInfo` or None if the order should not be filled.
         """
         raise NotImplementedError()
@@ -168,9 +168,9 @@ class FillStrategy(object):
         :param broker_: The broker.
         :type broker_: :class:`Broker`
         :param order: The order.
-        :type order: :class:`pyalgotrade.broker.StopOrder`
+        :type order: :class:`jgtpyalgotrade.broker.StopOrder`
         :param bar: The current bar.
-        :type bar: :class:`pyalgotrade.bar.Bar`
+        :type bar: :class:`jgtpyalgotrade.bar.Bar`
         :rtype: A :class:`FillInfo` or None if the order should not be filled.
         """
         raise NotImplementedError()
@@ -183,9 +183,9 @@ class FillStrategy(object):
         :param broker_: The broker.
         :type broker_: :class:`Broker`
         :param order: The order.
-        :type order: :class:`pyalgotrade.broker.StopLimitOrder`
+        :type order: :class:`jgtpyalgotrade.broker.StopLimitOrder`
         :param bar: The current bar.
-        :type bar: :class:`pyalgotrade.bar.Bar`
+        :type bar: :class:`jgtpyalgotrade.bar.Bar`
         :rtype: A :class:`FillInfo` or None if the order should not be filled.
         """
         raise NotImplementedError()
@@ -201,18 +201,18 @@ class DefaultStrategy(FillStrategy):
 
     This strategy works as follows:
 
-    * A :class:`pyalgotrade.broker.MarketOrder` is always filled using the open/close price.
-    * A :class:`pyalgotrade.broker.LimitOrder` will be filled like this:
+    * A :class:`jgtpyalgotrade.broker.MarketOrder` is always filled using the open/close price.
+    * A :class:`jgtpyalgotrade.broker.LimitOrder` will be filled like this:
         * If the limit price was penetrated with the open price, then the open price is used.
         * If the bar includes the limit price, then the limit price is used.
         * Note that when buying the price is penetrated if it gets <= the limit price, and when selling the price
           is penetrated if it gets >= the limit price
-    * A :class:`pyalgotrade.broker.StopOrder` will be filled like this:
+    * A :class:`jgtpyalgotrade.broker.StopOrder` will be filled like this:
         * If the stop price was penetrated with the open price, then the open price is used.
         * If the bar includes the stop price, then the stop price is used.
         * Note that when buying the price is penetrated if it gets >= the stop price, and when selling the price
           is penetrated if it gets <= the stop price
-    * A :class:`pyalgotrade.broker.StopLimitOrder` will be filled like this:
+    * A :class:`jgtpyalgotrade.broker.StopLimitOrder` will be filled like this:
         * If the stop price was penetrated with the open price, or if the bar includes the stop price, then the limit
           order becomes active.
         * If the limit order is active:
@@ -223,7 +223,7 @@ class DefaultStrategy(FillStrategy):
 
     .. note::
         * This is the default strategy used by the Broker.
-        * It uses :class:`pyalgotrade.broker.slippage.NoSlippage` slippage model by default.
+        * It uses :class:`jgtpyalgotrade.broker.slippage.NoSlippage` slippage model by default.
         * If volumeLimit is 0.25, and a certain bar's volume is 100, then no more than 25 shares can be used by all
           orders that get processed at that bar.
         * If using trade bars, then all the volume from that bar can be used.
@@ -242,7 +242,7 @@ class DefaultStrategy(FillStrategy):
         for instrument in bars.getInstruments():
             bar = bars[instrument]
             # Reset the volume available for each instrument.
-            if bar.getFrequency() == pyalgotrade.bar.Frequency.TRADE:
+            if bar.getFrequency() == jgtpyalgotrade.bar.Frequency.TRADE:
                 volumeLeft[instrument] = bar.getVolume()
             elif self.__volumeLimit is not None:
                 # We can't round here because there is no order to request the instrument traits.
@@ -293,7 +293,7 @@ class DefaultStrategy(FillStrategy):
         Set the slippage model to use.
 
         :param slippageModel: The slippage model.
-        :type slippageModel: :class:`pyalgotrade.broker.slippage.SlippageModel`
+        :type slippageModel: :class:`jgtpyalgotrade.broker.slippage.SlippageModel`
         """
 
         self.__slippageModel = slippageModel
@@ -336,7 +336,7 @@ class DefaultStrategy(FillStrategy):
         assert price is not None
 
         # Don't slip prices when the bar represents the trading activity of a single trade.
-        if bar.getFrequency() != pyalgotrade.bar.Frequency.TRADE:
+        if bar.getFrequency() != jgtpyalgotrade.bar.Frequency.TRADE:
             price = self.__slippageModel.calculatePrice(
                 order, price, fillSize, bar, self.__volumeUsed[order.getInstrument()]
             )
@@ -392,7 +392,7 @@ class DefaultStrategy(FillStrategy):
             assert price is not None
 
             # Don't slip prices when the bar represents the trading activity of a single trade.
-            if bar.getFrequency() != pyalgotrade.bar.Frequency.TRADE:
+            if bar.getFrequency() != jgtpyalgotrade.bar.Frequency.TRADE:
                 price = self.__slippageModel.calculatePrice(
                     order, price, fillSize, bar, self.__volumeUsed[order.getInstrument()]
                 )

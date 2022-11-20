@@ -18,5 +18,5 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-name = "PyAlgoTrade"
-__version__ = "0.21"
+name = "JGTPyAlgoTrade"
+__version__ = "0.22"

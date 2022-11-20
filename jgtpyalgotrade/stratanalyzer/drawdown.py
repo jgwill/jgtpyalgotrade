@@ -18,7 +18,7 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import stratanalyzer
+from jgtpyalgotrade import stratanalyzer
 
 import datetime
 
@@ -55,7 +55,7 @@ class DrawDownHelper(object):
 
 
 class DrawDown(stratanalyzer.StrategyAnalyzer):
-    """A :class:`pyalgotrade.stratanalyzer.StrategyAnalyzer` that calculates
+    """A :class:`jgtpyalgotrade.stratanalyzer.StrategyAnalyzer` that calculates
     max. drawdown and longest drawdown duration for the portfolio."""
 
     def __init__(self):

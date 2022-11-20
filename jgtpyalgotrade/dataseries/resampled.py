@@ -18,10 +18,10 @@ import abc
 
 import six
 
-from pyalgotrade import dataseries
-from pyalgotrade.dataseries import bards
-from pyalgotrade import bar
-from pyalgotrade import resamplebase
+from jgtpyalgotrade import dataseries
+from jgtpyalgotrade.dataseries import bards
+from jgtpyalgotrade import bar
+from jgtpyalgotrade import resamplebase
 
 
 class AggFunGrouper(resamplebase.Grouper):
@@ -113,7 +113,7 @@ class ResampledBarDataSeries(bards.BarDataSeries, DSResampler):
     Resampling will take place as new values get pushed into the dataseries being resampled.
 
     :param dataSeries: The DataSeries instance being resampled.
-    :type dataSeries: :class:`pyalgotrade.dataseries.bards.BarDataSeries`
+    :type dataSeries: :class:`jgtpyalgotrade.dataseries.bards.BarDataSeries`
     :param frequency: The grouping frequency in seconds. Must be > 0.
     :param maxLen: The maximum number of values to hold.
         Once a bounded length is full, when new items are added, a corresponding number of items are discarded

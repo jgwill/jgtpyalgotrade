@@ -22,8 +22,8 @@ import abc
 
 import six
 
-from pyalgotrade import observer
-from pyalgotrade import dispatchprio
+from jgtpyalgotrade import observer
+from jgtpyalgotrade import dispatchprio
 
 
 # This class is used to prevent bugs like the one triggered in testcases.bitstamp_test:TestCase.testRoundingBug.

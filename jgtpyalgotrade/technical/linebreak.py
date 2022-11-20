@@ -18,8 +18,8 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import dataseries
-from pyalgotrade.dataseries import bards
+from jgtpyalgotrade import dataseries
+from jgtpyalgotrade.dataseries import bards
 
 
 class Line(object):
@@ -58,7 +58,7 @@ class LineBreak(dataseries.SequenceDataSeries):
     This is a DataSeries of :class:`Line` instances.
 
     :param barDataSeries: The DataSeries instance being filtered.
-    :type barDataSeries: :class:`pyalgotrade.dataseries.bards.BarDataSeries`.
+    :type barDataSeries: :class:`jgtpyalgotrade.dataseries.bards.BarDataSeries`.
     :param reversalLines: The number of lines back to check to calculate a reversal. Must be greater than 1.
     :type reversalLines: int.
     :param useAdjustedValues: True to use adjusted high/low/close values.

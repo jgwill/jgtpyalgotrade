@@ -37,13 +37,13 @@ class SlippageModel(object):
         Returns the slipped price per share for an order.
 
         :param order: The order being filled.
-        :type order: :class:`pyalgotrade.broker.Order`.
+        :type order: :class:`jgtpyalgotrade.broker.Order`.
         :param price: The price for each share before slippage.
         :type price: float.
         :param quantity: The amount of shares that will get filled at this time for this order.
         :type quantity: float.
         :param bar: The current bar.
-        :type bar: :class:`pyalgotrade.bar.Bar`.
+        :type bar: :class:`jgtpyalgotrade.bar.Bar`.
         :param volumeUsed: The volume size that was taken so far from the current bar.
         :type volumeUsed: float.
         :rtype: float.
