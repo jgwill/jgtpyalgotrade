@@ -1,12 +1,12 @@
 from __future__ import print_function
 
-from pyalgotrade import strategy
-from pyalgotrade import plotter
-from pyalgotrade.barfeed import yahoofeed
-from pyalgotrade.technical import ma
-from pyalgotrade.technical import cumret
-from pyalgotrade.stratanalyzer import sharpe
-from pyalgotrade.stratanalyzer import returns
+from jgtpyalgotrade import strategy
+from jgtpyalgotrade import plotter
+from jgtpyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade.technical import ma
+from jgtpyalgotrade.technical import cumret
+from jgtpyalgotrade.stratanalyzer import sharpe
+from jgtpyalgotrade.stratanalyzer import returns
 
 
 class MarketTiming(strategy.BacktestingStrategy):

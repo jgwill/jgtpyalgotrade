@@ -20,11 +20,11 @@
 
 import datetime
 
-from pyalgotrade import strategy
-from pyalgotrade.broker import backtesting
-from pyalgotrade import bar
-from pyalgotrade import logger
-from pyalgotrade.barfeed import membf
+from jgtpyalgotrade import strategy
+from jgtpyalgotrade.broker import backtesting
+from jgtpyalgotrade import bar
+from jgtpyalgotrade import logger
+from jgtpyalgotrade.barfeed import membf
 
 
 class TestBarFeed(membf.BarFeed):

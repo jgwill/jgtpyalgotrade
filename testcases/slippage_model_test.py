@@ -22,10 +22,10 @@ import unittest
 
 from . import broker_backtesting_test
 
-from pyalgotrade import broker
-from pyalgotrade.broker import slippage
-from pyalgotrade.broker import backtesting
-from pyalgotrade import bar
+from jgtpyalgotrade import broker
+from jgtpyalgotrade.broker import slippage
+from jgtpyalgotrade.broker import backtesting
+from jgtpyalgotrade import bar
 
 
 class BaseTestCase(unittest.TestCase):

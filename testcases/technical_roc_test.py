@@ -22,8 +22,8 @@ from six.moves import xrange
 
 from . import common
 
-from pyalgotrade.technical import roc
-from pyalgotrade import dataseries
+from jgtpyalgotrade.technical import roc
+from jgtpyalgotrade import dataseries
 
 
 class ROCTestCase(common.TestCase):

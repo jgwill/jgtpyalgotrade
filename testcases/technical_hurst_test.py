@@ -22,8 +22,8 @@ import numpy as np
 
 from . import common
 
-from pyalgotrade.technical import hurst
-from pyalgotrade import dataseries
+from jgtpyalgotrade.technical import hurst
+from jgtpyalgotrade import dataseries
 
 
 def build_hurst(values, period, minLags, maxLags):

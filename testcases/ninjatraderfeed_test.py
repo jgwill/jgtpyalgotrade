@@ -24,10 +24,10 @@ from . import common
 from . import barfeed_test
 from . import feed_test
 
-from pyalgotrade.barfeed import ninjatraderfeed
-from pyalgotrade import marketsession
-from pyalgotrade import bar
-from pyalgotrade.utils import dt
+from jgtpyalgotrade.barfeed import ninjatraderfeed
+from jgtpyalgotrade import marketsession
+from jgtpyalgotrade import bar
+from jgtpyalgotrade.utils import dt
 
 
 class NinjaTraderTestCase(common.TestCase):

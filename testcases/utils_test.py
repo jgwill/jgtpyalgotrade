@@ -24,9 +24,9 @@ from six.moves import xrange
 
 from . import common
 
-from pyalgotrade import utils
-from pyalgotrade.utils import collections
-from pyalgotrade.utils import dt
+from jgtpyalgotrade import utils
+from jgtpyalgotrade.utils import collections
+from jgtpyalgotrade.utils import dt
 
 
 class UtilsTestCase(common.TestCase):

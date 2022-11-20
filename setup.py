@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# PyAlgoTrade
+# jgtpyalgotrade
 #
 # Copyright 2011-2018 Gabriel Martin Becedillas Ruiz
 #
@@ -24,36 +24,36 @@ except ImportError:
 
 
 setup(
-    name='PyAlgoTrade',
-    version='0.20',
-    description='Python Algorithmic Trading',
+    name='jgtpyalgotrade',
+    version='0.21',
+    description='JGT Python Algorithmic Trading',
     long_description='Python library for backtesting stock trading strategies.',
     author='Gabriel Martin Becedillas Ruiz',
-    author_email='pyalgotrade@gmail.com',
-    url='http://gbeced.github.io/pyalgotrade/',
-    download_url='http://sourceforge.net/projects/pyalgotrade/files/0.20/PyAlgoTrade-0.20.tar.gz/download',
+    author_email='jgtpyalgotrade@guillaumeisabelle.com',
+    url='http://github.com/jgwill/jgtpyalgotrade/',
+    download_url='https://github.com/jgwill/jgtpyalgotrade/archive/refs/tags/dummy.zip',
     classifiers=[
         "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
     packages=[
-        'pyalgotrade',
-        'pyalgotrade.barfeed',
-        'pyalgotrade.bitcoincharts',
-        'pyalgotrade.bitstamp',
-        'pyalgotrade.broker',
-        'pyalgotrade.dataseries',
-        'pyalgotrade.feed',
-        'pyalgotrade.optimizer',
-        'pyalgotrade.stratanalyzer',
-        'pyalgotrade.strategy',
-        'pyalgotrade.talibext',
-        'pyalgotrade.technical',
-        'pyalgotrade.tools',
-        'pyalgotrade.twitter',
-        'pyalgotrade.utils',
-        'pyalgotrade.websocket',
+        'jgtpyalgotrade',
+        'jgtpyalgotrade.barfeed',
+        'jgtpyalgotrade.bitcoincharts',
+        'jgtpyalgotrade.bitstamp',
+        'jgtpyalgotrade.broker',
+        'jgtpyalgotrade.dataseries',
+        'jgtpyalgotrade.feed',
+        'jgtpyalgotrade.optimizer',
+        'jgtpyalgotrade.stratanalyzer',
+        'jgtpyalgotrade.strategy',
+        'jgtpyalgotrade.talibext',
+        'jgtpyalgotrade.technical',
+        'jgtpyalgotrade.tools',
+        'jgtpyalgotrade.twitter',
+        'jgtpyalgotrade.utils',
+        'jgtpyalgotrade.websocket',
     ],
     install_requires=[
         "matplotlib",

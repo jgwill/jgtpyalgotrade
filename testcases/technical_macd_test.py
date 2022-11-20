@@ -20,8 +20,8 @@
 
 from . import common
 
-from pyalgotrade.technical import macd
-from pyalgotrade import dataseries
+from jgtpyalgotrade.technical import macd
+from jgtpyalgotrade import dataseries
 
 
 class MACDTestCase(common.TestCase):

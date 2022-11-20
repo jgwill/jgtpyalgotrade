@@ -23,10 +23,10 @@ import datetime
 
 from . import broker_backtesting_test
 
-from pyalgotrade import broker
-from pyalgotrade.broker import fillstrategy
-from pyalgotrade.broker import backtesting
-from pyalgotrade import bar
+from jgtpyalgotrade import broker
+from jgtpyalgotrade.broker import fillstrategy
+from jgtpyalgotrade.broker import backtesting
+from jgtpyalgotrade import bar
 
 
 class BaseTestCase(unittest.TestCase):

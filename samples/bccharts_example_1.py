@@ -1,6 +1,6 @@
-from pyalgotrade.bitcoincharts import barfeed
-from pyalgotrade.tools import resample
-from pyalgotrade import bar
+from jgtpyalgotrade.bitcoincharts import barfeed
+from jgtpyalgotrade.tools import resample
+from jgtpyalgotrade import bar
 
 import datetime
 

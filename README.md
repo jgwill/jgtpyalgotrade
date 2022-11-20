@@ -1,11 +1,11 @@
-PyAlgoTrade
+JGTPyAlgoTrade (Based on PyAlgoTrade)
 ===========
 
 [![Build Status](https://travis-ci.org/gbeced/pyalgotrade.png?branch=master)](https://travis-ci.org/gbeced/pyalgotrade)
 [![Coverage Status](https://coveralls.io/repos/gbeced/pyalgotrade/badge.svg?branch=master)](https://coveralls.io/r/gbeced/pyalgotrade?branch=master)
 
 
-PyAlgoTrade is an **event driven algorithmic trading** Python library. Although the initial focus
+JGTPyAlgoTrade is an **event driven algorithmic trading** Python library. Although the initial focus
 was on **backtesting**, **paper trading** is now possible using:
 
  * [Bitstamp](https://www.bitstamp.net/) for Bitcoins
@@ -14,7 +14,7 @@ and **live trading** is now possible using:
 
  * [Bitstamp](https://www.bitstamp.net/) for Bitcoins
 
-To get started with PyAlgoTrade take a look at the [tutorial](http://gbeced.github.io/pyalgotrade/docs/v0.20/html/tutorial.html) and the [full documentation](http://gbeced.github.io/pyalgotrade/docs/v0.20/html/index.html).
+To get started with PyAlgoTrade take a look at the [tutorial](http://gbeced.github.io/pyalgotrade/docs/v0.21/html/tutorial.html) and the [full documentation](http://gbeced.github.io/pyalgotrade/docs/v0.21/html/index.html).
 
 Main Features
 -------------

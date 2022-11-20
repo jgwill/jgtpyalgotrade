@@ -25,11 +25,11 @@ from . import strategy_test
 from . import position_test
 from testcases import test_strategy
 
-from pyalgotrade.barfeed import yahoofeed
-from pyalgotrade.barfeed import csvfeed
-from pyalgotrade.stratanalyzer import returns
-from pyalgotrade import broker
-from pyalgotrade import marketsession
+from jgtpyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade.barfeed import csvfeed
+from jgtpyalgotrade.stratanalyzer import returns
+from jgtpyalgotrade import broker
+from jgtpyalgotrade import marketsession
 
 
 class TimeWeightedReturnsTestCase(common.TestCase):

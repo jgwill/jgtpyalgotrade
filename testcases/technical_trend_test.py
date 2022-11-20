@@ -20,8 +20,8 @@
 
 from . import common
 
-from pyalgotrade.technical import linreg
-from pyalgotrade import dataseries
+from jgtpyalgotrade.technical import linreg
+from jgtpyalgotrade import dataseries
 
 
 class SlopeTest(common.TestCase):

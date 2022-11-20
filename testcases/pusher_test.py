@@ -22,8 +22,8 @@ import unittest
 import threading
 import datetime
 
-from pyalgotrade.websocket import pusher
-from pyalgotrade.websocket import client
+from jgtpyalgotrade.websocket import pusher
+from jgtpyalgotrade.websocket import client
 
 
 class WebSocketClient(pusher.WebSocketClient):

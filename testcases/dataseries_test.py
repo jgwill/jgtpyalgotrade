@@ -24,10 +24,10 @@ from six.moves import xrange
 
 from . import common
 
-from pyalgotrade import dataseries
-from pyalgotrade.dataseries import bards
-from pyalgotrade.dataseries import aligned
-from pyalgotrade import bar
+from jgtpyalgotrade import dataseries
+from jgtpyalgotrade.dataseries import bards
+from jgtpyalgotrade.dataseries import aligned
+from jgtpyalgotrade import bar
 
 
 class TestSequenceDataSeries(common.TestCase):

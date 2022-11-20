@@ -22,8 +22,8 @@ from six.moves import xrange
 
 from . import common
 
-from pyalgotrade.technical import bollinger
-from pyalgotrade import dataseries
+from jgtpyalgotrade.technical import bollinger
+from jgtpyalgotrade import dataseries
 
 
 class TestCase(common.TestCase):

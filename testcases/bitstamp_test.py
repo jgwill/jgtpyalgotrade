@@ -29,15 +29,15 @@ from six.moves import queue
 from . import common as tc_common
 from . import test_strategy
 
-from pyalgotrade import broker as basebroker
-from pyalgotrade.bitstamp import barfeed
-from pyalgotrade.bitstamp import broker
-from pyalgotrade.bitstamp import wsclient
-from pyalgotrade.bitstamp import httpclient
-from pyalgotrade.bitstamp import common
-from pyalgotrade.bitcoincharts import barfeed as btcbarfeed
-from pyalgotrade import strategy
-from pyalgotrade import dispatcher
+from jgtpyalgotrade import broker as basebroker
+from jgtpyalgotrade.bitstamp import barfeed
+from jgtpyalgotrade.bitstamp import broker
+from jgtpyalgotrade.bitstamp import wsclient
+from jgtpyalgotrade.bitstamp import httpclient
+from jgtpyalgotrade.bitstamp import common
+from jgtpyalgotrade.bitcoincharts import barfeed as btcbarfeed
+from jgtpyalgotrade import strategy
+from jgtpyalgotrade import dispatcher
 
 
 class WebSocketClientThreadMock(threading.Thread):

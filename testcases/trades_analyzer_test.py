@@ -28,11 +28,11 @@ from . import common
 from . import strategy_test
 from . import position_test
 
-from pyalgotrade.barfeed import ninjatraderfeed
-from pyalgotrade.barfeed import csvfeed
-from pyalgotrade.stratanalyzer import trades
-from pyalgotrade import broker
-from pyalgotrade.broker import backtesting
+from jgtpyalgotrade.barfeed import ninjatraderfeed
+from jgtpyalgotrade.barfeed import csvfeed
+from jgtpyalgotrade.stratanalyzer import trades
+from jgtpyalgotrade import broker
+from jgtpyalgotrade.broker import backtesting
 
 
 def buildUTCDateTime(year, month, day, hour, minute):

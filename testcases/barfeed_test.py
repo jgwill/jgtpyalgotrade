@@ -22,10 +22,10 @@ import datetime
 
 from . import common
 
-from pyalgotrade import barfeed
-from pyalgotrade.barfeed import common as bfcommon
-from pyalgotrade import bar
-from pyalgotrade import dispatcher
+from jgtpyalgotrade import barfeed
+from jgtpyalgotrade.barfeed import common as bfcommon
+from jgtpyalgotrade import bar
+from jgtpyalgotrade import dispatcher
 
 
 def check_base_barfeed(testCase, barFeed, barsHaveAdjClose):

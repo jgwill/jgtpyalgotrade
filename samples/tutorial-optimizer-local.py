@@ -1,6 +1,6 @@
 import itertools
-from pyalgotrade.optimizer import local
-from pyalgotrade.barfeed import quandlfeed
+from jgtpyalgotrade.optimizer import local
+from jgtpyalgotrade.barfeed import quandlfeed
 import rsi2
 
 

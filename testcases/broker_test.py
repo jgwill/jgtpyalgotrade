@@ -22,7 +22,7 @@ import datetime
 
 from . import common
 
-from pyalgotrade import broker
+from jgtpyalgotrade import broker
 
 
 class DefaultTraits(broker.InstrumentTraits):

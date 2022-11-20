@@ -23,16 +23,16 @@ import os
 import datetime
 
 sys.path.append(os.path.join("..", "symbols"))
-sys.path.append(os.path.join("..", ".."))  # For pyalgotrade
+sys.path.append(os.path.join("..", ".."))  # For jgtpyalgotrade
 
 import symbolsxml
 import merval_calendar
-import pyalgotrade.logger
+import jgtpyalgotrade.logger
 
-pyalgotrade.logger.file_log = "analyze_gaps.log"
-logger = pyalgotrade.logger.getLogger("analyze_gaps")
+jgtpyalgotrade.logger.file_log = "analyze_gaps.log"
+logger = jgtpyalgotrade.logger.getLogger("analyze_gaps")
 
-from pyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade.barfeed import yahoofeed
 
 
 storage = "data"

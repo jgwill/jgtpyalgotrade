@@ -20,8 +20,8 @@
 
 from . import common
 
-from pyalgotrade import dataseries
-from pyalgotrade.technical import cumret
+from jgtpyalgotrade import dataseries
+from jgtpyalgotrade.technical import cumret
 
 
 class CumRetTestCase(common.TestCase):

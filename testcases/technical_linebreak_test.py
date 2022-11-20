@@ -22,11 +22,11 @@ import datetime
 
 from . import common
 
-from pyalgotrade.technical import linebreak
-from pyalgotrade.barfeed import yahoofeed
-from pyalgotrade import dataseries
-from pyalgotrade import bar
-from pyalgotrade.dataseries import bards
+from jgtpyalgotrade.technical import linebreak
+from jgtpyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade import dataseries
+from jgtpyalgotrade import bar
+from jgtpyalgotrade.dataseries import bards
 
 
 class LineBreakTestCase(common.TestCase):

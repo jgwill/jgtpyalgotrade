@@ -25,10 +25,10 @@ from six.moves import xrange
 from . import common
 from . import feed_test
 
-from pyalgotrade.barfeed import yahoofeed
-from pyalgotrade.barfeed import sqlitefeed
-from pyalgotrade import bar
-from pyalgotrade import marketsession
+from jgtpyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade.barfeed import sqlitefeed
+from jgtpyalgotrade import bar
+from jgtpyalgotrade import marketsession
 
 
 class TemporarySQLiteFeed:

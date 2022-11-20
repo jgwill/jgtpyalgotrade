@@ -24,11 +24,11 @@ from . import common
 from . import barfeed_test
 from . import feed_test
 
-from pyalgotrade.utils import dt
-from pyalgotrade.barfeed import yahoofeed
-from pyalgotrade.barfeed import csvfeed
-from pyalgotrade import bar
-from pyalgotrade import marketsession
+from jgtpyalgotrade.utils import dt
+from jgtpyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade.barfeed import csvfeed
+from jgtpyalgotrade import bar
+from jgtpyalgotrade import marketsession
 
 
 class BarFeedEventHandler_TestLoadOrder:

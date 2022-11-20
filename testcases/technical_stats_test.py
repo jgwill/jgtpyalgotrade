@@ -22,8 +22,8 @@ import numpy
 
 from . import common
 
-from pyalgotrade.technical import stats
-from pyalgotrade import dataseries
+from jgtpyalgotrade.technical import stats
+from jgtpyalgotrade import dataseries
 
 
 class TestCase(common.TestCase):

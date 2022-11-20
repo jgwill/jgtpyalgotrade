@@ -23,8 +23,8 @@ import os
 
 from . import common
 
-from pyalgotrade.barfeed import yahoofeed
-from pyalgotrade import plotter
+from jgtpyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade import plotter
 
 sys.path.append("samples")
 import sma_crossover

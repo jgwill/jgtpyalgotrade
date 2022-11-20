@@ -1,5 +1,5 @@
-from pyalgotrade import strategy
-from pyalgotrade.barfeed import quandlfeed
+from jgtpyalgotrade import strategy
+from jgtpyalgotrade.barfeed import quandlfeed
 
 
 class MyStrategy(strategy.BacktestingStrategy):

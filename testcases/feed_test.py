@@ -18,7 +18,7 @@
 .. moduleauthor:: Gabriel Martin Becedillas Ruiz <gabriel.becedillas@gmail.com>
 """
 
-from pyalgotrade import dispatcher
+from jgtpyalgotrade import dispatcher
 
 
 # This will test both the feed and subject interface.

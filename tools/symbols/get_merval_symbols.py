@@ -21,11 +21,11 @@
 import sys
 sys.path.append("../..")
 
-import pyalgotrade.logger
+import jgtpyalgotrade.logger
 import lxml.html
 import symbolsxml
 
-logger = pyalgotrade.logger.getLogger("get_merval_symbols")
+logger = jgtpyalgotrade.logger.getLogger("get_merval_symbols")
 
 
 def find_company(htmlTree, ticker):

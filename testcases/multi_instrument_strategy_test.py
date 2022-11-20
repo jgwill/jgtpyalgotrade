@@ -20,13 +20,13 @@
 
 from . import common
 
-from pyalgotrade import bar
-from pyalgotrade.barfeed import yahoofeed
-from pyalgotrade.barfeed import sqlitefeed
-from pyalgotrade import marketsession
-from pyalgotrade import strategy
-from pyalgotrade.technical import ma
-from pyalgotrade.technical import cross
+from jgtpyalgotrade import bar
+from jgtpyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade.barfeed import sqlitefeed
+from jgtpyalgotrade import marketsession
+from jgtpyalgotrade import strategy
+from jgtpyalgotrade.technical import ma
+from jgtpyalgotrade.technical import cross
 
 
 class NikkeiSpyStrategy(strategy.BacktestingStrategy):

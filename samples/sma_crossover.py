@@ -1,6 +1,6 @@
-from pyalgotrade import strategy
-from pyalgotrade.technical import ma
-from pyalgotrade.technical import cross
+from jgtpyalgotrade import strategy
+from jgtpyalgotrade.technical import ma
+from jgtpyalgotrade.technical import cross
 
 
 class SMACrossOver(strategy.BacktestingStrategy):

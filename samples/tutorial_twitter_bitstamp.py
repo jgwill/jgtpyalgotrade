@@ -1,7 +1,7 @@
-from pyalgotrade import strategy
-from pyalgotrade.bitstamp import barfeed
-from pyalgotrade.bitstamp import broker
-from pyalgotrade.twitter import feed as twitterfeed
+from jgtpyalgotrade import strategy
+from jgtpyalgotrade.bitstamp import barfeed
+from jgtpyalgotrade.bitstamp import broker
+from jgtpyalgotrade.twitter import feed as twitterfeed
 
 
 class Strategy(strategy.BaseStrategy):

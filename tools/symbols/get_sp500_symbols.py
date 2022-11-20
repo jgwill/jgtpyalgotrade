@@ -21,12 +21,12 @@
 import sys
 sys.path.append("../..")
 
-import pyalgotrade.logger
+import jgtpyalgotrade.logger
 import lxml.html
 import symbolsxml
 
-# pyalgotrade.logger.file_log = "get_sp500_symbols.log"
-logger = pyalgotrade.logger.getLogger("get_sp500_symbols")
+# jgtpyalgotrade.logger.file_log = "get_sp500_symbols.log"
+logger = jgtpyalgotrade.logger.getLogger("get_sp500_symbols")
 
 TICKER_SYMBOL_COL = 0
 COMPANY_COL = 1

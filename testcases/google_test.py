@@ -22,7 +22,7 @@ import datetime
 
 from . import common
 
-from pyalgotrade.barfeed import googlefeed
+from jgtpyalgotrade.barfeed import googlefeed
 
 
 class ToolsTestCase(common.TestCase):

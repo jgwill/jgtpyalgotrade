@@ -25,8 +25,8 @@ from six.moves import xrange
 from . import common
 from . import feed_test
 
-from pyalgotrade.feed import memfeed
-from pyalgotrade import dispatcher
+from jgtpyalgotrade.feed import memfeed
+from jgtpyalgotrade import dispatcher
 
 
 class MemFeedTestCase(common.TestCase):

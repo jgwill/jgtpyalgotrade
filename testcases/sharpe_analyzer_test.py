@@ -23,13 +23,13 @@ import datetime
 from . import common
 from . import strategy_test
 
-from pyalgotrade.barfeed import yahoofeed
-from pyalgotrade.barfeed import ninjatraderfeed
-from pyalgotrade.barfeed import csvfeed
-from pyalgotrade.stratanalyzer import sharpe
-from pyalgotrade.broker import backtesting
-from pyalgotrade import broker
-from pyalgotrade import marketsession
+from jgtpyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade.barfeed import ninjatraderfeed
+from jgtpyalgotrade.barfeed import csvfeed
+from jgtpyalgotrade.stratanalyzer import sharpe
+from jgtpyalgotrade.broker import backtesting
+from jgtpyalgotrade import broker
+from jgtpyalgotrade import marketsession
 
 
 class SharpeRatioTestCase(common.TestCase):

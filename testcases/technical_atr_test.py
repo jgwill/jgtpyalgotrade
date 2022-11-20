@@ -24,10 +24,10 @@ from six.moves import xrange
 
 from . import common
 
-from pyalgotrade.technical import atr
-from pyalgotrade import bar
-from pyalgotrade.dataseries import bards
-from pyalgotrade import dataseries
+from jgtpyalgotrade.technical import atr
+from jgtpyalgotrade import bar
+from jgtpyalgotrade.dataseries import bards
+from jgtpyalgotrade import dataseries
 
 
 class TestCase(common.TestCase):

@@ -1,10 +1,10 @@
 from __future__ import print_function
 
-from pyalgotrade import strategy
-from pyalgotrade.barfeed import quandlfeed
-from pyalgotrade.stratanalyzer import returns
-from pyalgotrade.stratanalyzer import sharpe
-from pyalgotrade.utils import stats
+from jgtpyalgotrade import strategy
+from jgtpyalgotrade.barfeed import quandlfeed
+from jgtpyalgotrade.stratanalyzer import returns
+from jgtpyalgotrade.stratanalyzer import sharpe
+from jgtpyalgotrade.utils import stats
 
 
 class MyStrategy(strategy.BacktestingStrategy):

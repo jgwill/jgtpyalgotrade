@@ -24,7 +24,7 @@ from six.moves import cPickle
 
 from . import common
 
-from pyalgotrade import bar
+from jgtpyalgotrade import bar
 
 
 class BasicBarTestCase(common.TestCase):

@@ -28,9 +28,9 @@ import six
 
 from . import common
 
-from pyalgotrade.tools import quandl
-from pyalgotrade import bar
-from pyalgotrade.barfeed import quandlfeed
+from jgtpyalgotrade.tools import quandl
+from jgtpyalgotrade import bar
+from jgtpyalgotrade.barfeed import quandlfeed
 
 try:
     # This will get environment variables set.
@@ -294,7 +294,7 @@ class ToolsTestCase(common.TestCase):
         try:
             instrument = "ORCL"
             subprocess.call([
-                "python", "-m", "pyalgotrade.tools.quandl",
+                "python", "-m", "jgtpyalgotrade.tools.quandl",
                 "--source-code=WIKI",
                 "--table-code=%s" % instrument,
                 "--from-year=2010",
@@ -321,7 +321,7 @@ class ToolsTestCase(common.TestCase):
         try:
             instrument = "AAPL"
             subprocess.call([
-                "python", "-m", "pyalgotrade.tools.quandl",
+                "python", "-m", "jgtpyalgotrade.tools.quandl",
                 "--source-code=WIKI",
                 "--table-code=%s" % instrument,
                 "--from-year=2010",
@@ -349,7 +349,7 @@ class ToolsTestCase(common.TestCase):
             instrument = "inexistent"
             output = check_output(
                 [
-                    "python", "-m", "pyalgotrade.tools.quandl",
+                    "python", "-m", "jgtpyalgotrade.tools.quandl",
                     "--source-code=WIKI",
                     "--table-code=%s" % instrument,
                     "--from-year=2010",
@@ -368,7 +368,7 @@ class ToolsTestCase(common.TestCase):
                 instrument = "inexistent"
                 check_output(
                     [
-                        "python", "-m", "pyalgotrade.tools.quandl",
+                        "python", "-m", "jgtpyalgotrade.tools.quandl",
                         "--source-code=WIKI",
                         "--table-code=%s" % instrument,
                         "--from-year=2010",

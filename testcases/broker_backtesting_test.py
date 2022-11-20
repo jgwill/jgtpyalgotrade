@@ -22,10 +22,10 @@ import datetime
 
 from . import common
 
-from pyalgotrade import broker
-from pyalgotrade.broker import backtesting
-from pyalgotrade import bar
-from pyalgotrade import barfeed
+from jgtpyalgotrade import broker
+from jgtpyalgotrade.broker import backtesting
+from jgtpyalgotrade import bar
+from jgtpyalgotrade import barfeed
 
 
 class OrderUpdateCallback:

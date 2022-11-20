@@ -23,18 +23,18 @@ import os
 
 from . import common
 
-from pyalgotrade.barfeed import ninjatraderfeed
-from pyalgotrade.barfeed import yahoofeed
-from pyalgotrade.barfeed import csvfeed
-from pyalgotrade.tools import resample
-from pyalgotrade import marketsession
-from pyalgotrade.utils import dt
-from pyalgotrade.dataseries import resampled as resampled_ds
-from pyalgotrade.barfeed import resampled as resampled_bf
-from pyalgotrade.dataseries import bards
-from pyalgotrade import bar
-from pyalgotrade import dispatcher
-from pyalgotrade import resamplebase
+from jgtpyalgotrade.barfeed import ninjatraderfeed
+from jgtpyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade.barfeed import csvfeed
+from jgtpyalgotrade.tools import resample
+from jgtpyalgotrade import marketsession
+from jgtpyalgotrade.utils import dt
+from jgtpyalgotrade.dataseries import resampled as resampled_ds
+from jgtpyalgotrade.barfeed import resampled as resampled_bf
+from jgtpyalgotrade.dataseries import bards
+from jgtpyalgotrade import bar
+from jgtpyalgotrade import dispatcher
+from jgtpyalgotrade import resamplebase
 
 
 class IntraDayRange(common.TestCase):

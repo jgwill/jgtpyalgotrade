@@ -20,8 +20,8 @@
 
 from . import common
 
-from pyalgotrade.technical import rsi
-from pyalgotrade import dataseries
+from jgtpyalgotrade.technical import rsi
+from jgtpyalgotrade import dataseries
 
 
 class TestCase(common.TestCase):

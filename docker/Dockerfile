@@ -36,4 +36,4 @@ RUN cd /tmp; \
 	rm -rf ta-lib
 RUN pip install TA-Lib
 
-RUN pip install pyalgotrade==0.20
+RUN pip install jgtpyalgotrade==0.20

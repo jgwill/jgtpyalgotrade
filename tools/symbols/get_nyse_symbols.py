@@ -21,14 +21,14 @@
 import sys
 sys.path.append("../..")
 
-import pyalgotrade.logger
+import jgtpyalgotrade.logger
 import tempfile
 import urllib2
 import csv
 import symbolsxml
 
 
-logger = pyalgotrade.logger.getLogger("get_nyse_symbols")
+logger = jgtpyalgotrade.logger.getLogger("get_nyse_symbols")
 
 
 def main():

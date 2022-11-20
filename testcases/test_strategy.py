@@ -20,7 +20,7 @@
 
 import datetime
 
-from pyalgotrade import strategy
+from jgtpyalgotrade import strategy
 
 
 class TestStrategyMixin(object):

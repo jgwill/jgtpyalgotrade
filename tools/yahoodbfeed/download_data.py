@@ -22,14 +22,14 @@ import os
 import sys
 
 sys.path.append(os.path.join("..", "symbols"))
-sys.path.append(os.path.join("..", ".."))  # For pyalgotrade
+sys.path.append(os.path.join("..", ".."))  # For jgtpyalgotrade
 
-import pyalgotrade.logger
+import jgtpyalgotrade.logger
 
-pyalgotrade.logger.file_log = "download_data.log"
-logger = pyalgotrade.logger.getLogger("download_data")
+jgtpyalgotrade.logger.file_log = "download_data.log"
+logger = jgtpyalgotrade.logger.getLogger("download_data")
 
-from pyalgotrade.tools import yahoofinance
+from jgtpyalgotrade.tools import yahoofinance
 import symbolsxml
 
 

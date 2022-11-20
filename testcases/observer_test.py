@@ -25,8 +25,8 @@ from six.moves import xrange
 
 from . import common
 
-from pyalgotrade import observer
-from pyalgotrade import dispatcher
+from jgtpyalgotrade import observer
+from jgtpyalgotrade import dispatcher
 
 
 class NonRealtimeFeed(observer.Subject):

@@ -1,7 +1,7 @@
-from pyalgotrade import strategy
-from pyalgotrade import plotter
-from pyalgotrade.tools import quandl
-from pyalgotrade.feed import csvfeed
+from jgtpyalgotrade import strategy
+from jgtpyalgotrade import plotter
+from jgtpyalgotrade.tools import quandl
+from jgtpyalgotrade.feed import csvfeed
 import datetime
 
 

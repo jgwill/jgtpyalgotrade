@@ -1,9 +1,9 @@
 from __future__ import print_function
 
 import rsi2
-from pyalgotrade import plotter
-from pyalgotrade.barfeed import yahoofeed
-from pyalgotrade.stratanalyzer import sharpe
+from jgtpyalgotrade import plotter
+from jgtpyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade.stratanalyzer import sharpe
 
 
 def main(plot):

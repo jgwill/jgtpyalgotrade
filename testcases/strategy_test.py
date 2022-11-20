@@ -22,9 +22,9 @@ import datetime
 
 from . import common
 
-from pyalgotrade import strategy
-from pyalgotrade import broker
-from pyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade import strategy
+from jgtpyalgotrade import broker
+from jgtpyalgotrade.barfeed import yahoofeed
 
 
 def get_by_datetime_or_date(dict_, dateTimeOrDate):

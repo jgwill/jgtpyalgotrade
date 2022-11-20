@@ -20,10 +20,10 @@
 
 from . import common
 
-from pyalgotrade import strategy
-from pyalgotrade.barfeed import yahoofeed
-from pyalgotrade.technical import ma
-from pyalgotrade.technical import cross
+from jgtpyalgotrade import strategy
+from jgtpyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade.technical import ma
+from jgtpyalgotrade.technical import cross
 
 
 class SMACrossOverStrategy(strategy.BacktestingStrategy):

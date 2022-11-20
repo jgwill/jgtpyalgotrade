@@ -20,8 +20,8 @@
 
 from . import common
 
-from pyalgotrade import technical
-from pyalgotrade import dataseries
+from jgtpyalgotrade import technical
+from jgtpyalgotrade import dataseries
 
 
 class TestEventWindow(technical.EventWindow):

@@ -23,11 +23,11 @@ import datetime
 from . import common
 from . import strategy_test
 
-from pyalgotrade.barfeed import yahoofeed
-from pyalgotrade.barfeed import membf
-from pyalgotrade.stratanalyzer import drawdown
-from pyalgotrade import broker
-from pyalgotrade import bar
+from jgtpyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade.barfeed import membf
+from jgtpyalgotrade.stratanalyzer import drawdown
+from jgtpyalgotrade import broker
+from jgtpyalgotrade import bar
 
 
 def build_bars_from_closing_prices(closingPrices):

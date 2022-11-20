@@ -22,10 +22,10 @@ from six.moves import xrange
 
 from . import common
 
-from pyalgotrade.technical import ma
-from pyalgotrade import dataseries
-from pyalgotrade.barfeed import ninjatraderfeed
-from pyalgotrade import bar
+from jgtpyalgotrade.technical import ma
+from jgtpyalgotrade import dataseries
+from jgtpyalgotrade.barfeed import ninjatraderfeed
+from jgtpyalgotrade import bar
 
 
 def safe_round(number, ndigits):

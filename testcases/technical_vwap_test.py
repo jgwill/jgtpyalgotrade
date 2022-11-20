@@ -22,8 +22,8 @@ from six.moves import xrange
 
 from . import common
 
-from pyalgotrade.technical import vwap
-from pyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade.technical import vwap
+from jgtpyalgotrade.barfeed import yahoofeed
 
 
 class VWAPTestCase(common.TestCase):

@@ -20,8 +20,8 @@
 
 from . import common
 
-from pyalgotrade.technical import ratio
-from pyalgotrade import dataseries
+from jgtpyalgotrade.technical import ratio
+from jgtpyalgotrade import dataseries
 
 
 class TestCase(common.TestCase):

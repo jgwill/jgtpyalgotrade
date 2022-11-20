@@ -30,7 +30,7 @@ import matplotlib
 matplotlib.use('Agg')
 from six.moves import xrange
 
-from pyalgotrade import dataseries
+from jgtpyalgotrade import dataseries
 
 
 class RunResults(object):

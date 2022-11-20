@@ -24,10 +24,10 @@ import os
 from . import common
 from . import feed_test
 
-from pyalgotrade.feed import csvfeed
-from pyalgotrade import dispatcher
-from pyalgotrade import marketsession
-from pyalgotrade.utils import dt
+from jgtpyalgotrade.feed import csvfeed
+from jgtpyalgotrade import dispatcher
+from jgtpyalgotrade import marketsession
+from jgtpyalgotrade.utils import dt
 
 
 class TestCase(common.TestCase):

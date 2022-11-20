@@ -28,10 +28,10 @@ try:
 except:
     pass
 
-from pyalgotrade import dispatcher
+from jgtpyalgotrade import dispatcher
 
 try:
-    from pyalgotrade.twitter import feed as twitterfeed
+    from jgtpyalgotrade.twitter import feed as twitterfeed
 
 
     class TwitterFeedTestCase(common.TestCase):

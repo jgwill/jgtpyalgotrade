@@ -24,9 +24,9 @@ from six.moves import xrange
 
 from . import common
 
-from pyalgotrade.technical import stoch
-from pyalgotrade.dataseries import bards
-from pyalgotrade import bar
+from jgtpyalgotrade.technical import stoch
+from jgtpyalgotrade.dataseries import bards
+from jgtpyalgotrade import bar
 
 
 def values_equal(v1, v2):

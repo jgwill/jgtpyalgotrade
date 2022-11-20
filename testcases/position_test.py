@@ -24,16 +24,16 @@ import pytz
 from . import common
 from . import strategy_test
 
-from pyalgotrade import bar
-from pyalgotrade import strategy
-from pyalgotrade.strategy import position
-from pyalgotrade.barfeed import yahoofeed
-from pyalgotrade.barfeed import csvfeed
-from pyalgotrade import barfeed
-from pyalgotrade.barfeed import membf
-from pyalgotrade.barfeed import ninjatraderfeed
-from pyalgotrade.utils import dt
-from pyalgotrade import marketsession
+from jgtpyalgotrade import bar
+from jgtpyalgotrade import strategy
+from jgtpyalgotrade.strategy import position
+from jgtpyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade.barfeed import csvfeed
+from jgtpyalgotrade import barfeed
+from jgtpyalgotrade.barfeed import membf
+from jgtpyalgotrade.barfeed import ninjatraderfeed
+from jgtpyalgotrade.utils import dt
+from jgtpyalgotrade import marketsession
 
 
 def load_daily_barfeed(instrument):

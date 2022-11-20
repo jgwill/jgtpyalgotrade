@@ -23,9 +23,9 @@ import logging
 
 from . import common
 
-from pyalgotrade.optimizer import local
-from pyalgotrade import strategy
-from pyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade.optimizer import local
+from jgtpyalgotrade import strategy
+from jgtpyalgotrade.barfeed import yahoofeed
 
 sys.path.append("samples")
 import sma_crossover

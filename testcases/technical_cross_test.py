@@ -20,9 +20,9 @@
 
 from . import common
 
-from pyalgotrade.technical import cross
-from pyalgotrade.technical import ma
-from pyalgotrade import dataseries
+from jgtpyalgotrade.technical import cross
+from jgtpyalgotrade.technical import ma
+from jgtpyalgotrade import dataseries
 
 
 class HelpersTestCase(common.TestCase):

@@ -22,8 +22,8 @@ import datetime
 
 from . import common
 
-from pyalgotrade import eventprofiler
-from pyalgotrade.barfeed import yahoofeed
+from jgtpyalgotrade import eventprofiler
+from jgtpyalgotrade.barfeed import yahoofeed
 
 
 class Predicate(eventprofiler.Predicate):

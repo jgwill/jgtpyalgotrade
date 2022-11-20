@@ -1,7 +1,7 @@
-from pyalgotrade import strategy
-from pyalgotrade.barfeed import quandlfeed
-from pyalgotrade.technical import ma
-from pyalgotrade.technical import rsi
+from jgtpyalgotrade import strategy
+from jgtpyalgotrade.barfeed import quandlfeed
+from jgtpyalgotrade.technical import ma
+from jgtpyalgotrade.technical import rsi
 
 
 def safe_round(value, digits):

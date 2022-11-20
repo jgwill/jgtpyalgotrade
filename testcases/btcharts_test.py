@@ -22,8 +22,8 @@ import datetime
 
 from . import common
 
-from pyalgotrade.bitcoincharts import barfeed
-from pyalgotrade.utils import dt
+from jgtpyalgotrade.bitcoincharts import barfeed
+from jgtpyalgotrade.utils import dt
 
 
 class TestCase(common.TestCase):

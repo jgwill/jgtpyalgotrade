@@ -25,10 +25,10 @@ from six.moves import xrange
 
 from . import common
 
-from pyalgotrade.talibext import indicator
-from pyalgotrade import bar
-from pyalgotrade import dataseries
-from pyalgotrade.dataseries import bards
+from jgtpyalgotrade.talibext import indicator
+from jgtpyalgotrade import bar
+from jgtpyalgotrade import dataseries
+from jgtpyalgotrade.dataseries import bards
 
 
 # Market data used for regression tests (252 price bars) extracted from ta-lib/src/tools/ta_regtest/test_data.c
