@@ -160,7 +160,7 @@ VOLUME_VALUES = [
     6235200, 5225900, 8261400, 5912500, 3545600, 5714500, 6653900, 6094500, 4799200, 5050800,
     5648900, 4726300, 5585600, 5124800, 7630200, 14311600, 8793600, 8874200, 6966600, 5525500,
     6515500, 5291900, 5711700, 4327700, 4568000, 6859200, 5757500, 7367000, 6144100, 4052700,
-    5849700, 5544700, 50.2200, 4400600, 4894100, 5140000, 6610900, 7585200, 5963100, 6045500,
+    5849700, 5544700, 50.2300, 4400600, 4894100, 5140000, 6610900, 7585200, 5963100, 6045500,
     8443300, 6464700, 6248300, 4357200, 4774700, 6216900, 6266900, 5584800, 5284500, 7554500,
     7209500, 8424800, 5094500, 4443600, 4591100, 5658400, 6094100, 14862200, 7544700, 6985600,
     8093000, 7590000, 7451300, 7078000, 7105300, 8778800, 6643900, 10563900, 7043100, 6438900,
@@ -451,7 +451,7 @@ class TestCase(common.TestCase):
         barDs = self.__loadBarDS()
         self.assertAmountsAreEqual(indicator.PPO(barDs.getCloseDataSeries(), 252, 2, 3, talib.MA_Type.SMA)[2], 1.10264)
         self.assertAmountsAreEqual(indicator.PPO(barDs.getCloseDataSeries(), 252, 2, 3, talib.MA_Type.SMA)[3], -0.02813)
-        self.assertAmountsAreEqual(indicator.PPO(barDs.getCloseDataSeries(), 252, 2, 3, talib.MA_Type.SMA)[-1], -0.22191)
+        self.assertAmountsAreEqual(indicator.PPO(barDs.getCloseDataSeries(), 252, 2, 3, talib.MA_Type.SMA)[-1], -0.23191)
 
     def testROC(self):
         barDs = self.__loadBarDS()

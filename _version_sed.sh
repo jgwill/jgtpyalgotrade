@@ -1,5 +1,5 @@
-pversion=0.22
-nversion=0.22
+pversion=0.23
+nversion=0.23
 cdir=$(pwd)
 
 cd jgtpyalgotrade

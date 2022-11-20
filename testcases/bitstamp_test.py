@@ -358,7 +358,7 @@ class PaperTradingTestCase(tc_common.TestCase):
         self.assertEquals(strat.pos.getExitOrder().getSubmitDateTime().date(), wsclient.get_current_datetime().date())
 
     def testRoundingBugWithTrades(self):
-        # Unless proper rounding is in place 0.01 - 0.00441376 - 0.00445547 - 0.00113077 == 6.50.22303491e-19
+        # Unless proper rounding is in place 0.01 - 0.00441376 - 0.00445547 - 0.00113077 == 6.50.23303491e-19
         # instead of 0.
 
         class Strategy(TestStrategy):

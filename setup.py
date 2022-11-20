@@ -25,7 +25,7 @@ except ImportError:
 
 setup(
     name='jgtpyalgotrade',
-    version='0.22',
+    version='0.23',
     description='JGT Python Algorithmic Trading.  Based on work from : Gabriel Martin Becedillas Ruiz',
     long_description='Python library for backtesting stock trading strategies.',
     author='Jean-Guillaume Isabelle',

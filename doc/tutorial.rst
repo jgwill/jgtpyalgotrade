@@ -205,7 +205,7 @@ and something like this on the worker/s console: ::
     2017-07-21 22:56:58,918 localworker [INFO] Running strategy with parameters ('ibm', 150, 5, 2, 84, 14)
     2017-07-21 22:56:58,996 localworker [INFO] Result 1027761.85581
     2017-07-21 22:56:58,997 localworker [INFO] Running strategy with parameters ('ibm', 150, 5, 2, 93, 25)
-    2017-07-21 22:56:59,427 localworker [INFO] Result 10.2294.67448
+    2017-07-21 22:56:59,427 localworker [INFO] Result 10.2394.67448
     2017-07-21 22:57:00,016 localworker [INFO] Result 1260766.64479
     .
     .
